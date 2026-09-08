@@ -1,0 +1,112 @@
+:root {
+    --scene-dark-color: #3a1010;
+    --scene-light-color: #f5e6d3;
+}
+
+body,
+.main-wrapper-scene {
+    transition: background-color 0.25s ease-in;
+    background-color: var(--scene-dark-color);
+}
+
+.main-wrapper-scene {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-height: 100vh;
+    max-width: calc(100vh * 16 / 9);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+#main-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.movable-layer,
+.scene-background,
+.scene-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Text Layers */
+.text-layer.left .layer-content {
+    position: absolute;
+    top: 15%;
+    left: 9%;
+    width: 38%;
+}
+
+.text-layer.top .layer-content {
+    position: absolute;
+    top: 15%;
+    left: 9%;
+    width: 82%;
+}
+
+.text-layer.bottom .layer-content {
+    position: absolute;
+    bottom: 15%;
+    left: 9%;
+    width: 82%;
+}
+
+.layer-content h1 {
+    margin-bottom: 2px;
+    font-size: 6vh;
+    line-height: 1.1;
+    font-family: "Solway", serif;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--scene-light-color);
+}
+
+.layer-content p {
+    margin-top: 0;
+    font-size: 3.8vh;
+    line-height: 1.1;
+    color: #F2F2F2;
+}
+
+.buttons-container {
+    margin-top: .5rem;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    justify-content: flex-start;
+    pointer-events: all;
+}
+
+.buttons-container button {
+    font-size: 3vh;
+    background: transparent;
+    border: 0.15vw solid var(--scene-light-color);
+    color: var(--scene-light-color);
+    cursor: pointer;
+    border-radius: 0.3vw;
+    padding: 0.4rem 0.8rem;
+    width: fit-content;
+    pointer-events: all;
+}
+
+.buttons-container button span {
+    vertical-align: middle;
+}
+
+.button-icon {
+    align-items: center;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    margin-left: 0.3rem;
+}
