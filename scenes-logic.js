@@ -12,6 +12,7 @@ function goToScene(sceneId) {
 function buildScene(scene) {
     document.documentElement.style.setProperty('--scene-dark-color', scene.darkColor);
     document.documentElement.style.setProperty('--scene-light-color', scene.lightColor);
+    document.documentElement.style.setProperty('--scene-immersive-color', scene.immersiveColor);
 
     const parallaxScene = document.getElementById('main-scene');
     parallaxScene.innerHTML = '';
@@ -22,7 +23,7 @@ function buildScene(scene) {
     backgroundLayer.dataset.depth = 0;
 
     const backgroundImg = document.createElement('img');
-    backgroundImg.src = `./assets/backgrounds/scene-${scene.id}.png`; //PENDING: Change to WEBP
+    backgroundImg.src = `./assets/backgrounds/scene-${scene.id}.webp`;
     backgroundImg.alt = "";
     backgroundImg.draggable = false;
     backgroundImg.className = 'scene-background';
@@ -48,6 +49,22 @@ function buildScene(scene) {
 
         parallaxScene.appendChild(elementLayer);
     });
+
+    // Gradient box
+    const textGradient = document.createElement('div');
+    textGradient.className = `movable-layer text-gradient ${scene.textLayout}`;
+
+    const textGradientContent = document.createElement('div');
+    textGradientContent.className = 'gradient-content';
+
+    if (scene.textLayout === 'left' || scene.textLayout === 'right') {
+        textGradientContent.style.width = `${scene.gradientWH}%`;
+    } else {
+        textGradientContent.style.height = `${scene.gradientWH}%`;
+    }
+
+    textGradient.appendChild(textGradientContent);
+    parallaxScene.appendChild(textGradient);
 
     // Text and buttons
     const textLayer = document.createElement('div');
@@ -101,7 +118,7 @@ function buildScene(scene) {
     frameLayer.dataset.depth = 0;
 
     const frameImg = document.createElement('img');
-    frameImg.src = `./assets/frames/scene-${scene.id}.png`; //PENDING: Change to WEBP
+    frameImg.src = `./assets/frames/scene-${scene.id}.webp`;
     frameImg.alt = "";
     frameImg.draggable = false;
     frameImg.className = 'scene-frame';
@@ -120,8 +137,8 @@ function buildScene(scene) {
 
 function preloadAssets(scene) {
     const assets = [
-        `./assets/backgrounds/scene-${scene.id}.png`,
-        `./assets/frames/scene-${scene.id}.png`,
+        `./assets/backgrounds/scene-${scene.id}.webp`,
+        `./assets/frames/scene-${scene.id}.webp`,
         ...scene.elements.map(element => `./assets/elements/${element.asset}`)
     ];
 
