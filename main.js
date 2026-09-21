@@ -5,7 +5,7 @@ const parallaxOptions = {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    goToScene("1");
+    goToScene("4a");
 });
 
 const loader = document.getElementById('loader');

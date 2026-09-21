@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test Gyroscope</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+</head>
+
+<body>
+    <button id="btnPermission" onclick="gyro()" disabled>enable parallax</button>
+    <div class="main-wrapper-scene">
+        <div id="main-scene">
+            <div data-depth="0.1">test?</div>
+            <div data-depth="0.6">test2</div>
+        </div>
+    </div>
+
+    <div>
+        <br /><br />Logs:
+        <div id="logs"></div>
+    </div>
+
+    <script>
+        let scene = document.getElementById('main-scene');
+        let parallaxInstance;
+        let enableButton = document.getElementById('btnPermission');
+        document.addEventListener('DOMContentLoaded', () => {
+            const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+            const isIOS = typeof DeviceOrientationEvent !== 'undefined' &&
+                typeof DeviceOrientationEvent.requestPermission === 'function';
+
+            if (!isTouchDevice || !isIOS) {
+                addLog("non ios or touch, starting")
+                parallaxInstance = new Parallax(scene);
+                return;
+            }
+
+            // iOS touch device: verify if gyro is already active
+            let hasData = false;
+
+            const checkEvent = (e) => {
+                addLog("checking events");
+                if (e.alpha !== null || e.beta !== null || e.gamma !== null) {
+                    addLog("gyro data detected, starting", {
+                                calibrateX: true,
+                                calibrateY: true,
+                                scalarX: 10.0,
+                                scalarY: 10.0
+                            });
+                    hasData = true;
+                    window.removeEventListener('deviceorientation', checkEvent);
+                    parallaxInstance = new Parallax(scene);
+                }
+            };
+
+            window.addEventListener('deviceorientation', checkEvent);
+
+            setTimeout(() => {
+                window.removeEventListener('deviceorientation', checkEvent);
+                if (!hasData) {
+                    addLog("no gyro data detected, manually start");
+                    enableButton.disabled = false;
+                }
+            }, 500);
+        });
+
+        function gyro() {
+            if (typeof DeviceOrientationEvent !== 'undefined' &&
+                typeof DeviceOrientationEvent.requestPermission === 'function') {
+
+                DeviceOrientationEvent.requestPermission()
+                    .then(response => {
+                        if (response === 'granted') {
+                            if (parallaxInstance) {
+                                parallaxInstance.destroy();
+                            }
+                            parallaxInstance = new Parallax(scene, {
+                                calibrateX: true,
+                                calibrateY: true,
+                                scalarX: 10.0,
+                                scalarY: 10.0
+                            });
+
+                            if (typeof parallaxInstance.enable === 'function') {
+                                parallaxInstance.enable();
+                            }
+
+                            enableButton.disabled = true;
+                        }
+                    })
+                    .catch(console.error);
+            } else {
+                parallaxInstance = new Parallax(scene);
+                enableButton.disabled = true;
+            }
+        }
+
+        function addLog(message) {
+            const logsDiv = document.getElementById('logs');
+            const logEntry = document.createElement('p');
+            logEntry.textContent = message;
+            logsDiv.appendChild(logEntry);
+        }
+    </script>
+</body>
+
+</html>
