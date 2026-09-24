@@ -25,11 +25,11 @@ const scenes = [
         id: "AI",
         darkColor: "#005580",
         lightColor: "#CCEEFF",
-        immersiveColor: "#F1DFDA",
+        immersiveColor: "#085D91",
         textLayout: "top",
-        gradientWH: 40,
+        gradientWH: 0,
         title: "AI usage in this project",
-        description: "I like to be fair and honest about the tools I used to create this project. Regarding Generative Artificial Intelligence (AI), I used it as follows, approximately of course: ...",
+        description: "In this page I will talk about in which ways I used Generative Artificial Intelligence (AI) to build and bring this project to life.\n",
         hasAudio: false,
         elements: [],
         buttons: [
@@ -73,7 +73,7 @@ const scenes = [
         lightColor: "#E3EDDE",
         immersiveColor: "#001F18",
         textLayout: "left",
-        gradientWH: 45,
+        gradientWH: 0,
         title: "Is the cage holding the monkey?",
         description: "Or is the monkey holding the cage? Hunters build cages for the banana, so the monkey gets trapped by itself, making it easier to hunt them.",
         hasAudio: false,
@@ -178,6 +178,32 @@ const scenes = [
             { asset: "scene-5a-fruit1.png", top: 74, left: 57, width: 5, depth: 0.4 },
         ],
         buttons: [
+            { text: "Next", toScene: "5b" }
+        ]
+    },
+    {
+        id: "5b",
+        darkColor: "#806000",
+        lightColor: "#FFF9E6",
+        immersiveColor: "#BC892A",
+        textLayout: "top",
+        gradientWH: 48,
+        title: "Ownership is overrated",
+        description: "Having more stuff doesn't make life better. Wealth is the ability to enjoy what we already possess.",
+        hasAudio: false,
+        elements: [
+            { asset: "scene-5b-spiral.png", top: 38, left: 10, width: 34, depth: 0.1 },
+            { asset: "scene-5b-rays.png", top: 40, left: 60, width: 30, depth: 0.1 },
+            { asset: "scene-5b-silhouette-sad.png", top: 59, left: 18, width: 14, depth: 0.2 },
+            { asset: "scene-5b-silhouette-happy.png", top: 54, left: 66, width: 14, depth: 0.2 },
+            { asset: "scene-5b-item1.png", top: 64, left: 12, width: 7, depth: 0.3 },
+            { asset: "scene-5b-item2.png", top: 44, left: 21, width: 7, depth: 0.46 },
+            { asset: "scene-5b-item3.png", top: 58, left: 33, width: 7, depth: 0.38 },
+            { asset: "scene-5a-fruit1.png", top: 62, left: 59, width: 7, depth: 0.3 },
+            { asset: "scene-5a-fruit2.png", top: 45, left: 70, width: 6, depth: 0.46 },
+            { asset: "scene-5a-fruit3.png", top: 64, left: 81, width: 7, depth: 0.38 },
+        ],
+        buttons: [
             { text: "Next", toScene: "6a" }
         ]
     },
@@ -278,6 +304,96 @@ const scenes = [
             
             { asset: "scene-7a-silhouette.png", top: 58, left: 20, width: 11, depth: 0.3 },
             { asset: "scene-7a-spotlight.png", top: 0, left: 10, width: 30, depth: 0.4 },
+        ],
+        buttons: [
+            { text: "Next", toScene: "7b" }
+        ]
+    },
+    {
+        id: "7b",
+        darkColor: "#49306B",
+        lightColor: "#E4DCEF",
+        immersiveColor: "#8F6A42",
+        textLayout: "left",
+        gradientWH: 0,
+        title: "Is bad traffic really a warzone?",
+        description: "Traffic, delays, and messes are spontaneous moments. Turning them into catastrophes is purely our invention.",
+        hasAudio: false,
+        elements: [
+            { asset: "scene-7b-bottom-bubble.png", top: 0, left: 58, width: 40, depth: 0.3 },
+            { asset: "scene-7b-explosion.png", top: 3, left: 59, width: 37, depth: 0.1 },
+            { asset: "scene-7b-jet1.png", top: 20, left: 60, width: 11, depth: 0.2 },
+            { asset: "scene-7b-jet2.png", top: 32, left: 73, width: 9, depth: 0.28 },
+            { asset: "scene-7b-jet3.png", top: 13, left: 80, width: 7, depth: 0.2 },
+            { asset: "scene-7b-bomb1.png", top: 34, left: 84, width: 7, depth: 0.15 },
+            { asset: "scene-7b-bomb1-details.png", top: 29, left: 89, width: 4, depth: 0.2 },
+            { asset: "scene-7b-bomb2.png", top: 44, left: 66, width: 5, depth: 0.18 },
+            { asset: "scene-7b-bomb2-details.png", top: 40, left: 64.2, width: 3, depth: 0.2 },
+            { asset: "scene-7b-top-bubble.png", top: -5, left: 55, width: 46, depth: 0.36 },
+        ],
+        buttons: [
+            { text: "Open the chest", toScene: "7c" }
+        ]
+    },
+    {
+        id: "7c",
+        darkColor: "#A23311",
+        lightColor: "#FADAD1",
+        immersiveColor: "#FFE699",
+        textLayout: "bottom",
+        gradientWH: 51,
+        title: "Life's treasure chest",
+        description: "Life keeps filling this chest with experiences. Your only job is to reach in and find what can be enjoyed.",
+        hasAudio: false,
+        elements: [
+            { asset: "scene-7c-chest-bg.png", top: 37.9, left: 37.8, width: 33.2, depth: 0.3 },
+            { asset: "scene-7c-chest2.png", top: 9.68, left: 38, width: 39.4, depth: 0.3 },
+            { asset: "scene-7c-letter1.png", top: 34, left: 39, width: 14, depth: 0.43 },
+            { asset: "scene-7c-letter2.png", top: 10, left: 46, width: 13, depth: 0.52 },
+            { asset: "scene-7c-letter3.png", top: 8, left: 10, width: 14, depth: 0.52 },
+            { asset: "scene-7c-letter4.png", top: 22, left: 26, width: 14, depth: 0.43 },
+            { asset: "scene-7c-letter5.png", top: 29, left: 56, width: 10.5, depth: 0.52 },
+            { asset: "scene-7c-letter6.png", top: 30, left: 78, width: 14, depth: 0.43 },
+            { asset: "scene-7c-letter7.png", top: 2, left: 67, width: 14, depth: 0.43 },
+            { asset: "scene-7c-letter8.png", top: 46, left: 12, width: 14, depth: 0.52 },
+            { asset: "scene-7c-letter-blank6.png", top: 44, left: 51.5, width: 6, depth: 0.3 },
+            { asset: "scene-7c-letter-blank1.png", top: 38, left: 65, width: 6, depth: 0.3 },
+            { asset: "scene-7c-letter-blank5.png", top: 27, left: 50, width: 6, depth: 0.3 },
+            { asset: "scene-7c-letter-blank4.png", top: 20, left: 62, width: 6, depth: 0.4 },
+            { asset: "scene-7c-letter-blank3.png", top: 30, left: 12, width: 4, depth: 0.3 },
+            { asset: "scene-7c-letter-blank6.png", top: 40, left: 20, width: 4, depth: 0.5 },
+            { asset: "scene-7c-letter-blank2.png", top: 26, left: 71, width: 4, depth: 0.5 },
+            { asset: "scene-7c-letter-blank7.png", top: 50, left: 29, width: 6, depth: 0.3 },
+            { asset: "scene-7c-letter-blank8.png", top: 54, left: 78, width: 4, depth: 0.5 },
+            { asset: "scene-7c-letter-blank1.png", top: 48, left: 88, width: 6, depth: 0.6 },
+            { asset: "scene-7c-letter-blank3.png", top: 18, left: 83, width: 4, depth: 0.7 },
+            { asset: "scene-7c-letter-blank7.png", top: 5, left: 40, width: 4, depth: 0.2 },
+            { asset: "scene-7c-letter-blank5.png", top: 8, left: 28, width: 6, depth: 0.7 },
+            { asset: "scene-7c-letter-blank2.png", top: 18, left: 40, width: 4, depth: 0.3 },
+            { asset: "scene-7c-chest1.png", top: 42, left: 38, width: 34, depth: 0.3 },
+        ],
+        buttons: [
+            { text: "Next", toScene: "8" }
+        ]
+    },
+    {
+        id: "8",
+        darkColor: "#314706",
+        lightColor: "#EDFBD0",
+        immersiveColor: "#1D1E20",
+        textLayout: "left",
+        gradientWH: 50,
+        title: "What if nothing is truly terrible?",
+        description: "Actually... nothing is.",
+        hasAudio: false,
+        elements: [
+            { asset: "scene-8-b3.png", top: 35, left: 25, width: 78, depth: 0.2 },
+            { asset: "scene-8-b2.png", top: 40, left: 25, width: 78, depth: 0.3 },
+            { asset: "scene-8-b1.png", top: 45, left: 25, width: 78, depth: 0.4 },
+            { asset: "scene-8-balloon1.png", top: 8, left: 53, width: 14.5, depth: 0.55 },
+            { asset: "scene-8-balloon3.png", top: 28, left: 40, width: 10, depth: 0.36 },
+            { asset: "scene-8-balloon2.png", top: 12, left: 82, width: 8, depth: 0.26 },
+            { asset: "scene-8-balloon4.png", top: 28, left: 70, width: 10, depth: 0.48 },
         ],
         buttons: [
             { text: "Home", toScene: "1" }
