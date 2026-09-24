@@ -6,6 +6,7 @@ function goToScene(sceneId) {
     preloadAssets(scene).then(() => {
         //startAudioEffects(scene);
         closeLoader();
+        localStorage.setItem("last-scene", scene.id)
     });
 }
 
@@ -102,7 +103,13 @@ function buildScene(scene) {
                 button.appendChild(buttonIconSpan);
             }
 
-            button.addEventListener('click', () => goToScene(btn.toScene));
+            button.addEventListener('click', () => {
+                if (btn.toScene) {
+                    goToScene(btn.toScene);
+                } else if (btn.toLink) {
+                    window.open(btn.toLink, '_blank');
+                }
+            });
             buttonsContainer.appendChild(button);
         });
 

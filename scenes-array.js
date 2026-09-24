@@ -7,33 +7,82 @@ const scenes = [
         textLayout: "left",
         gradientWH: 50,
         title: "What if nothing is truly terrible?",
-        description: "PENDING",
+        description: "A visual journey through Rafael Santandreu's ideas of renunciation and creation, showing how letting go clears the space to find joy anywhere. Step in to explore how light life feels on the other side.",
         hasAudio: false,
         elements: [
             { asset: "scene-1-b3.png", top: 35, left: 25, width: 78, depth: 0.2 },
             { asset: "scene-1-b2.png", top: 40, left: 25, width: 78, depth: 0.3 },
             { asset: "scene-1-b1.png", top: 45, left: 25, width: 78, depth: 0.4 },
             { asset: "scene-1-lightning.png", top: 0, left: 42, width: 32, depth: 0.1 },
-            { asset: "scene-1-lightning.png", top: 2, left: 68, width: 32, depth: 0.1 },
+            { asset: "scene-1-lightning.png", top: 2, left: 68, width: 28, depth: 0.1 },
         ],
         buttons: [
-            { text: "Begin Journey", icon: "chevron-right", toScene: "2" },
-            { text: "AI Usage", icon: "robot", toScene: "AI" }
+            { text: "Step Inside", icon: "chevron-right", toScene: "2" },
+            { text: "AI Usage", icon: "robot", toScene: "AI1" },
+            { text: "Credits", icon: "align-left", toScene: "CR1" }
         ]
     },
     {
-        id: "AI",
+        id: "AI1",
         darkColor: "#005580",
         lightColor: "#CCEEFF",
         immersiveColor: "#085D91",
         textLayout: "top",
         gradientWH: 0,
         title: "AI usage in this project",
-        description: "In this page I will talk about in which ways I used Generative Artificial Intelligence (AI) to build and bring this project to life.\n",
+        description: "In the following pages, I'll explain how I used Generative Artificial Intelligence (AI) to help bring this project to life. I've been coding since I was 12, so my background in web development is pretty solid. The vast majority of the code was written by me, using AI only for a few lines to boost efficiency and organization. One thing I refuse to do is \"vibe coding;\" copying and pasting raw code from automated tools is a nightmare. By writing my own code and vetting every AI-generated line, I spend less time debugging errors and keep the site clean and structures for both, behind the scenes for me, and on the screen for you, the user.",
         hasAudio: false,
         elements: [],
         buttons: [
-            { text: "Go Back", icon: "house", toScene: "1" }
+            { text: "Home", icon: "house", toScene: "1" },
+            { text: "Next", icon: "chevron-right", toScene: "AI2" }
+        ]
+    },
+    {
+        id: "AI2",
+        darkColor: "#005580",
+        lightColor: "#CCEEFF",
+        immersiveColor: "#085D91",
+        textLayout: "top",
+        gradientWH: 0,
+        title: "Brainstorming and copywriting",
+        description: "Although the original concept and layout were mine, I relied on AI to refine the project, find more efficient wasys to build it, and organize the theme of each screen. The core concepts are based on Rafael Santandreu's Spanish book \"Nada es tan terrible,\" drawing specifically from Part 1 of the book (see Credits for more details).",
+        hasAudio: false,
+        elements: [],
+        buttons: [
+            { text: "Home", icon: "house", toScene: "1" },
+            { text: "Next", icon: "chevron-right", toScene: "AI3" }
+        ]
+    },
+    {
+        id: "AI3",
+        darkColor: "#005580",
+        lightColor: "#CCEEFF",
+        immersiveColor: "#085D91",
+        textLayout: "top",
+        gradientWH: 0,
+        title: "Images: backgrounds and floating elements",
+        description: "All images used in each scene's background and frame all human-made and shot by real photographers, sourced from Pexels.com or Unsplash.com (see Credits for more details). Out of the 100+ floating elements designed for these scenes, only 9 icons are AI-generated (done purely to keep the visual style consistent). All other designs, including the frame's outline, are 100% human-made: either created by myself or sourced from Magnific.com and modified to fit each scene's theme.",
+        hasAudio: false,
+        elements: [],
+        buttons: [
+            { text: "Home", icon: "house", toScene: "1" }
+        ]
+    },
+    {
+        id: "CR1",
+        darkColor: "#005580",
+        lightColor: "#CCEEFF",
+        immersiveColor: "#085D91",
+        textLayout: "top",
+        gradientWH: 0,
+        title: "Credits",
+        description: "Pending...",
+        hasAudio: false,
+        elements: [],
+        buttons: [
+            { text: "Home", icon: "house", toScene: "1" },
+            { text: "Next", icon: "chevron-right", toScene: "CR2" }
         ]
     },
     {
@@ -64,7 +113,7 @@ const scenes = [
             { asset: "scene-2-tangle6.png", top: 58, left: 76, width: 23, depth: 0.18 },
         ],
         buttons: [
-            { text: "How we trap ourselves?", toScene: "3a" }
+            { text: "See who holds the bars", toScene: "3a" }
         ]
     },
     {
@@ -75,7 +124,7 @@ const scenes = [
         textLayout: "left",
         gradientWH: 0,
         title: "Is the cage holding the monkey?",
-        description: "Or is the monkey holding the cage? Hunters build cages for the banana, so the monkey gets trapped by itself, making it easier to hunt them.",
+        description: "Or is the monkey holding the cage? Hunters build cages for the banana, this way, the monkeys get trapped by themselves trying to reach out the fruit. Since the animal won't let go off the banana, the hunters can easily catch them.",
         hasAudio: false,
         elements: [
             { asset: "scene-3ab-banana.png", top: 37, left: 51, width: 11, depth: 0.1 },
@@ -106,7 +155,7 @@ const scenes = [
             { asset: "scene-3b-monkey.png", top: 30, left: 38, width: 35, depth: 0.25 }
         ],
         buttons: [
-            { text: "Next", toScene: "4a" }
+            { text: "Break free", toScene: "4a" }
         ]
     },
     {
@@ -124,7 +173,7 @@ const scenes = [
             { asset: "scene-4a-silhouette.png", top: 60, left: 44, width: 8, depth: 0.3 },
         ],
         buttons: [
-            { text: "Next", toScene: "4c" }
+            { text: "Clear the way", toScene: "4c" }
         ]
     },
     {
@@ -145,7 +194,7 @@ const scenes = [
             { asset: "scene-4c-quillink.png", top: 69, left: 72, width: 8, depth: 0.15 }
         ],
         buttons: [
-            { text: "Ready for a fresh start?", toScene: "5a" }
+            { text: "Look around", toScene: "5a" }
         ]
     },
     {
@@ -155,7 +204,7 @@ const scenes = [
         immersiveColor: "#10467A",
         textLayout: "center",
         gradientWH: 54,
-        title: "Life is a garden",
+        title: "Life is a garden!",
         description: "It's packed with a beautiful fruits. Nobody needs to own the garden to enjoy it. Just learn to notice what's already growing!",
         hasAudio: false,
         elements: [
@@ -178,7 +227,7 @@ const scenes = [
             { asset: "scene-5a-fruit1.png", top: 74, left: 57, width: 5, depth: 0.4 },
         ],
         buttons: [
-            { text: "Next", toScene: "5b" }
+            { text: "Look around", toScene: "5b" }
         ]
     },
     {
@@ -204,7 +253,7 @@ const scenes = [
             { asset: "scene-5a-fruit3.png", top: 64, left: 81, width: 7, depth: 0.38 },
         ],
         buttons: [
-            { text: "Next", toScene: "6a" }
+            { text: "Continue", toScene: "6a" }
         ]
     },
     {
@@ -215,7 +264,7 @@ const scenes = [
         textLayout: "right",
         gradientWH: 52,
         title: "How heavy is a glass of water?",
-        description: "Hold it for a minute, no problem. Hold it for an hour, your arm starts to ache. Hold it all day, and you are paralyzed!",
+        description: "Hold it for a minute, no problem. Hold it for an hour, your arm starts to ache. Hold it all day, and you are paralyzed! The weight never changes, only how long you grip it.",
         hasAudio: false,
         elements: [
             { asset: "scene-6a-droplet1.png", top: 18, left: 12, width: 10, depth: 0.6 },
@@ -226,7 +275,7 @@ const scenes = [
             { asset: "scene-6a-hand.png", top: 43, left: 32, width: 38, depth: 0.4 }
         ],
         buttons: [
-            { text: "Hold it longer", toScene: "6b" }
+            { text: "Keep holding", toScene: "6b" }
         ]
     },
     {
@@ -237,7 +286,7 @@ const scenes = [
         textLayout: "right",
         gradientWH: 50,
         title: "The weight is self-inflicted",
-        description: "Anxiety, rage, shame, and desperation. These feelings are common, but they aren't necessary, and carrying them around just drains your personal energy.",
+        description: "Constantly obsessing about that exam, the meeting, or the \"what ifs\" turns into paralyzing anxiety when we refuse to set those thoughts down. We are the ones keeping our arms raised, and we are the only ones who can set the glass down.",
         hasAudio: false,
         elements: [
             { asset: "scene-6b-droplet4.png", top: 53, left: 2, width: 35, depth: 0.2 },
@@ -248,7 +297,7 @@ const scenes = [
             { asset: "scene-6b-hand.png", top: 43, left: 32, width: 38, depth: 0.8 }
         ],
         buttons: [
-            { text: "Put the glass down", toScene: "6c" }
+            { text: "Open the hand", toScene: "6c" }
         ]
     },
     {
@@ -259,7 +308,7 @@ const scenes = [
         textLayout: "right",
         gradientWH: 55,
         title: "Suddenly, the ache stops",
-        description: "The moment your hand opens, you can feel the relief. Letting go doesn't break the glass, it just free you to move again.",
+        description: "The moment your hand opens and you detach from the outcome of those worries, you can feel the relief. Stepping back isn't failure; it's what frees you to keep moving forward.",
         hasAudio: false,
         elements: [
             { asset: "scene-6c-droplet1.png", top: 68, left: 10, width: 18, depth: 0.05 },
@@ -270,7 +319,7 @@ const scenes = [
             { asset: "scene-6c-hand.png", top: 43, left: 30, width: 38, depth: 0.6 }
         ],
         buttons: [
-            { text: "Next", toScene: "7a" }
+            { text: "See the path", toScene: "7a" }
         ]
     },
     {
@@ -306,7 +355,7 @@ const scenes = [
             { asset: "scene-7a-spotlight.png", top: 0, left: 10, width: 30, depth: 0.4 },
         ],
         buttons: [
-            { text: "Next", toScene: "7b" }
+            { text: "Step outside", toScene: "7b" }
         ]
     },
     {
@@ -317,7 +366,7 @@ const scenes = [
         textLayout: "left",
         gradientWH: 0,
         title: "Is bad traffic really a warzone?",
-        description: "Traffic, delays, and messes are spontaneous moments. Turning them into catastrophes is purely our invention.",
+        description: "Bad traffic, long lines, or a spilled coffee aren't real disasters. Believing that life should always go smoothly is what makes small disruptions feel impossible. Even a delay is just extra time you didn't know you had!",
         hasAudio: false,
         elements: [
             { asset: "scene-7b-bottom-bubble.png", top: 0, left: 58, width: 40, depth: 0.3 },
@@ -332,7 +381,7 @@ const scenes = [
             { asset: "scene-7b-top-bubble.png", top: -5, left: 55, width: 46, depth: 0.36 },
         ],
         buttons: [
-            { text: "Open the chest", toScene: "7c" }
+            { text: "Shift your perspective", toScene: "7c" }
         ]
     },
     {
@@ -343,7 +392,7 @@ const scenes = [
         textLayout: "bottom",
         gradientWH: 51,
         title: "Life's treasure chest",
-        description: "Life keeps filling this chest with experiences. Your only job is to reach in and find what can be enjoyed.",
+        description: "Life fills this chest with every kind of moment, good or messy. None of them are catastrophes, and your only job is to reach in and find what can be enjoyed.",
         hasAudio: false,
         elements: [
             { asset: "scene-7c-chest-bg.png", top: 37.9, left: 37.8, width: 33.2, depth: 0.3 },
@@ -373,7 +422,7 @@ const scenes = [
             { asset: "scene-7c-chest1.png", top: 42, left: 38, width: 34, depth: 0.3 },
         ],
         buttons: [
-            { text: "Next", toScene: "8" }
+            { text: "Feel the lightness", toScene: "8" }
         ]
     },
     {
@@ -382,9 +431,9 @@ const scenes = [
         lightColor: "#EDFBD0",
         immersiveColor: "#1D1E20",
         textLayout: "left",
-        gradientWH: 50,
+        gradientWH: 54,
         title: "What if nothing is truly terrible?",
-        description: "Actually... nothing is.",
+        description: "Actually... nothing is. When you drop the heavy grip of expectations, you see that ordinary moments were never your enemy. Renunciation empties your hands so you can finally enjoy what's in front of you; now you decide what you actually care to hold.",
         hasAudio: false,
         elements: [
             { asset: "scene-8-b3.png", top: 35, left: 25, width: 78, depth: 0.2 },
@@ -396,7 +445,10 @@ const scenes = [
             { asset: "scene-8-balloon4.png", top: 28, left: 70, width: 10, depth: 0.48 },
         ],
         buttons: [
-            { text: "Home", toScene: "1" }
+            { text: "Back to beginning", icon: "house", toScene: "1" },
+            { text: "Share experience", icon: "share-nodes", toLink: "/share.html" },
+            { text: "About the books", icon: "arrow-up-right-from-square", toLink: "https://www.amazon.com/stores/Rafael-Santandreu/author/B00J2GNY9M" },
+            { text: "Leave feedback", icon: "comment-dots", toLink: "https://www.trvsolutions.com" }
         ]
     },
 ]

@@ -28,7 +28,8 @@ html {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 51, 17, 0.5);
+    background-color: rgba(25, 25, 26, 0.5);
+    background-color: color-mix(in srgb, var(--scene-dark-color) 60%, transparent);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     z-index: 1000;
@@ -63,6 +64,26 @@ html {
 .loader-overlay .loader-box p {
     font-size: 1.2rem;
     margin-top: 0;
+}
+
+/* Hide mobile */
+.mobile-not-compatible {
+    display: block;
+}
+
+.main-wrapper-scene {
+    display: none;
+}
+
+@media (orientation: landscape),
+(min-width: 768px) {
+    .mobile-not-compatible {
+        display: none;
+    }
+
+    .main-wrapper-scene {
+        display: block;
+    }
 }
 
 @-webkit-keyframes fade-in {

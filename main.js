@@ -1,11 +1,14 @@
 let scene, parallaxInstance;
 const parallaxOptions = {
-    selector: '.movable-layer',
+    selector: '.movable-layer'
     //onReady: closeLoader
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    goToScene("4a");
+    const restoreProgress = localStorage.getItem("last-scene");
+    const isValidScene = scenes.some(scene => scene.id === restoreProgress);
+
+    goToScene(isValidScene ? restoreProgress : "1");
 });
 
 const loader = document.getElementById('loader');

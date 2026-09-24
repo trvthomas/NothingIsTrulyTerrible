@@ -80,19 +80,21 @@ body,
 
 .layer-content h1 {
     margin-bottom: 2px;
-    font-size: clamp(none, 6vh, 3.7vw);
+    font-size: clamp(none, 6vh, 3.5vw);
     line-height: 1.1;
     font-family: "Solway", serif;
     font-weight: 800;
     font-style: normal;
     color: var(--scene-light-color);
+    text-shadow: 0 0 2vw rgba(25, 25, 26, 0.6);
 }
 
 .layer-content p {
     margin-top: 0;
-    font-size: clamp(none, 3.8vh, 2.7vw);
+    font-size: clamp(none, 3.8vh, 2.5vw);
     line-height: 1.1;
     color: #F2F2F2;
+    text-shadow: 0 0 2vw rgba(25, 25, 26, 0.6);
 }
 
 .buttons-container {
@@ -114,15 +116,23 @@ body,
 }
 
 .buttons-container button {
-    font-size: clamp(none, 3vh, 2.3vw);
-    background: transparent;
-    border: 0.15vw solid var(--scene-light-color);
-    color: var(--scene-light-color);
+    font-size: clamp(none, 3vh, 2.2vw);
+    background: var(--scene-light-color);
+    background: linear-gradient(162deg, var(--scene-light-color), color-mix(in srgb, var(--scene-light-color), var(--scene-dark-color) 35%));
+    box-shadow: 0 0 1.8vw rgba(25, 25, 26, 0.6);
+    border: 0.25vw solid var(--scene-dark-color);
+    color: var(--scene-dark-color);
     cursor: pointer;
-    border-radius: 0.3vw;
+    border-radius: 5vw;
     padding: 0.4rem 0.8rem;
     width: fit-content;
     pointer-events: all;
+    transition: transform 0.3s ease;
+}
+
+.buttons-container button:hover {
+    transform: scale(1.04);
+    opacity: 0.97;
 }
 
 .buttons-container button span {
