@@ -1,4 +1,4 @@
-let scene, parallaxInstance;
+let parallaxSceneDiv, parallaxInstance;
 const parallaxOptions = {
     selector: '.movable-layer'
     //onReady: closeLoader

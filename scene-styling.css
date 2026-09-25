@@ -102,7 +102,7 @@ body,
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: .75rem;
+    gap: .75vw;
     justify-content: flex-start;
     pointer-events: all;
 }
@@ -197,4 +197,12 @@ body,
     height: 40%;
     background: var(--scene-dark-color);
     background: radial-gradient(ellipse, var(--scene-dark-color) 0%, var(--scene-dark-color) 30%, transparent 70%, transparent 100%);
+}
+
+@media (max-width: 767px) {
+
+    .layer-content h1,
+    .layer-content p {
+        line-height: 0.8;
+    }
 }

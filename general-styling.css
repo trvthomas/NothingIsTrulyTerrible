@@ -13,7 +13,7 @@ html {
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    background-color: #F2F2F2;
+    background-color: #F0F2EF;
     scroll-behavior: smooth;
     display: flex;
     align-items: center;
@@ -57,8 +57,9 @@ html {
     margin: auto;
 }
 
-.loader-overlay .loader-image img {
-    width: 100%;
+.loader-overlay .loader-image i {
+    color: var(--scene-light-color);
+    font-size: clamp(none, 25vh, 15vw);
 }
 
 .loader-overlay .loader-box p {
@@ -69,10 +70,48 @@ html {
 /* Hide mobile */
 .mobile-not-compatible {
     display: block;
+    text-align: center;
+    padding: 1.8rem 1rem;
+    margin: 0.6rem;
 }
 
 .main-wrapper-scene {
     display: none;
+}
+
+.mobile-not-compatible div {
+    background-color: #F0F2EF;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+.mobile-not-compatible i {
+    font-size: 6rem;
+    color: #42783B;
+}
+
+.mobile-not-compatible h1 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 4rem;
+    line-height: 0.9;
+    font-family: "Solway", serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #42783B;
+    text-shadow: 0 0 1rem rgba(25, 25, 26, 0.3);
+}
+
+.mobile-not-compatible p {
+    margin-top: 0;
+    font-size: 2rem;
+    line-height: 0.95;
+    color: #19191A;
+}
+
+.mobile-not-compatible img {
+    margin-bottom: 0.5rem;
+    width: 90%;
 }
 
 @media (orientation: landscape),

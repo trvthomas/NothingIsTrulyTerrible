@@ -138,8 +138,10 @@ function buildScene(scene) {
         parallaxInstance.destroy();
     }
 
-    scene = document.getElementById('main-scene');
-    parallaxInstance = new Parallax(scene, parallaxOptions);
+    parallaxSceneDiv = document.getElementById('main-scene');
+    parallaxInstance = new Parallax(parallaxSceneDiv, parallaxOptions);
+
+    document.title = scene.title + " | Nothing is Truly Terrible";
 }
 
 function preloadAssets(scene) {

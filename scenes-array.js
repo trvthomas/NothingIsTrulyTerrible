@@ -10,11 +10,11 @@ const scenes = [
         description: "A visual journey through Rafael Santandreu's ideas of renunciation and creation, showing how letting go clears the space to find joy anywhere. Step in to explore how light life feels on the other side.",
         hasAudio: false,
         elements: [
-            { asset: "scene-1-b3.png", top: 35, left: 25, width: 78, depth: 0.2 },
-            { asset: "scene-1-b2.png", top: 40, left: 25, width: 78, depth: 0.3 },
-            { asset: "scene-1-b1.png", top: 45, left: 25, width: 78, depth: 0.4 },
-            { asset: "scene-1-lightning.png", top: 0, left: 42, width: 32, depth: 0.1 },
-            { asset: "scene-1-lightning.png", top: 2, left: 68, width: 28, depth: 0.1 },
+            { asset: "scene-1-b3.webp", top: 35, left: 25, width: 78, depth: 0.2 },
+            { asset: "scene-1-b2.webp", top: 40, left: 25, width: 78, depth: 0.3 },
+            { asset: "scene-1-b1.webp", top: 45, left: 25, width: 78, depth: 0.4 },
+            { asset: "scene-1-lightning.webp", top: 0, left: 42, width: 32, depth: 0.1 },
+            { asset: "scene-1-lightning.webp", top: 2, left: 68, width: 28, depth: 0.1 },
         ],
         buttons: [
             { text: "Step Inside", icon: "chevron-right", toScene: "2" },
@@ -46,7 +46,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "Brainstorming and copywriting",
-        description: "Although the original concept and layout were mine, I relied on AI to refine the project, find more efficient wasys to build it, and organize the theme of each screen. The core concepts are based on Rafael Santandreu's Spanish book \"Nada es tan terrible,\" drawing specifically from Part 1 of the book (see Credits for more details).",
+        description: "Although the original concept and layout were mine, I relied on AI to refine the project, find more efficient ways to build it, and organize the theme of each screen. The core concepts are based on Rafael Santandreu's Spanish book \"Nada es tan terrible,\" drawing specifically from Part 1 of the book (see Credits for more details).",
         hasAudio: false,
         elements: [],
         buttons: [
@@ -62,7 +62,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "Images: backgrounds and floating elements",
-        description: "All images used in each scene's background and frame all human-made and shot by real photographers, sourced from Pexels.com or Unsplash.com (see Credits for more details). Out of the 100+ floating elements designed for these scenes, only 9 icons are AI-generated (done purely to keep the visual style consistent). All other designs, including the frame's outline, are 100% human-made: either created by myself or sourced from Magnific.com and modified to fit each scene's theme.",
+        description: "All images used in each scene's background and frame are shot by real photographers, sourced from Pexels.com or Unsplash.com (see Credits for more details). Out of the 100+ floating elements designed for these scenes, only 9 icons are AI-generated (done purely to keep the visual style consistent). All other designs, including the frame's outline, are 100% human-made: either created by myself or sourced from Magnific.com and modified to fit each scene's theme.",
         hasAudio: false,
         elements: [],
         buttons: [
@@ -77,12 +77,11 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "Credits",
-        description: "Pending...",
+        description: "•| Concepts and philosophy: Based on Part 1 of \"Nada es tan terrible\" by Rafael Santandreu. \n•| Background and texture images: Photography sourced via Unsplash.com and Pexels.com. \n•| Custom artwork and adaptations: Designed, vectorized, and modified by Thomas Rodriguez (@trvthomas) \n•| Vectors and assets: Sourced from Magnific.com, designed by: rawpixel.com, vectorpouch, macrovector, brgfx, Freepik, starline, juicy_fish, pch.vector, vector4stock, djvstock, kjpargeter, muhammad.abdullah, vectorjuice, callmetak.",
         hasAudio: false,
         elements: [],
         buttons: [
-            { text: "Home", icon: "house", toScene: "1" },
-            { text: "Next", icon: "chevron-right", toScene: "CR2" }
+            { text: "Home", icon: "house", toScene: "1" }
         ]
     },
     {
@@ -97,20 +96,20 @@ const scenes = [
         hasAudio: false,
         elements: [
             // Items
-            { asset: "scene-2-item1.png", top: 24, left: 12, width: 12, depth: 0.36 },
-            { asset: "scene-2-item4.png", top: 18, left: 49, width: 10, depth: 0.36 },
-            { asset: "scene-2-item3.png", top: 23, left: 80, width: 8, depth: 0.36 },
-            { asset: "scene-2-item2.png", top: 69, left: 13, width: 11, depth: 0.36 },
-            { asset: "scene-2-item5.png", top: 77, left: 49, width: 9, depth: 0.36 },
-            { asset: "scene-2-item6.png", top: 71, left: 82, width: 11, depth: 0.36 },
+            { asset: "scene-2-item1.webp", top: 24, left: 12, width: 12, depth: 0.36 },
+            { asset: "scene-2-item4.webp", top: 18, left: 49, width: 10, depth: 0.36 },
+            { asset: "scene-2-item3.webp", top: 23, left: 80, width: 8, depth: 0.36 },
+            { asset: "scene-2-item2.webp", top: 69, left: 13, width: 11, depth: 0.36 },
+            { asset: "scene-2-item5.webp", top: 77, left: 49, width: 9, depth: 0.36 },
+            { asset: "scene-2-item6.webp", top: 71, left: 82, width: 11, depth: 0.36 },
 
             // Tangles
-            { asset: "scene-2-tangle1.png", top: 3, left: 10, width: 16, depth: 0.18 },
-            { asset: "scene-2-tangle2.png", top: -2, left: 46, width: 16, depth: 0.18 },
-            { asset: "scene-2-tangle3.png", top: 18, left: 76, width: 23, depth: 0.18 },
-            { asset: "scene-2-tangle4.png", top: 57, left: 7, width: 23, depth: 0.18 },
-            { asset: "scene-2-tangle5.png", top: 66, left: 42, width: 21, depth: 0.18 },
-            { asset: "scene-2-tangle6.png", top: 58, left: 76, width: 23, depth: 0.18 },
+            { asset: "scene-2-tangle1.webp", top: 3, left: 10, width: 16, depth: 0.18 },
+            { asset: "scene-2-tangle2.webp", top: -2, left: 46, width: 16, depth: 0.18 },
+            { asset: "scene-2-tangle3.webp", top: 18, left: 76, width: 23, depth: 0.18 },
+            { asset: "scene-2-tangle4.webp", top: 57, left: 7, width: 23, depth: 0.18 },
+            { asset: "scene-2-tangle5.webp", top: 66, left: 42, width: 21, depth: 0.18 },
+            { asset: "scene-2-tangle6.webp", top: 58, left: 76, width: 23, depth: 0.18 },
         ],
         buttons: [
             { text: "See who holds the bars", toScene: "3a" }
@@ -124,14 +123,14 @@ const scenes = [
         textLayout: "left",
         gradientWH: 0,
         title: "Is the cage holding the monkey?",
-        description: "Or is the monkey holding the cage? Hunters build cages for the banana, this way, the monkeys get trapped by themselves trying to reach out the fruit. Since the animal won't let go off the banana, the hunters can easily catch them.",
+        description: "Or is the monkey holding the cage? Hunters build cages for the banana. This way, the monkeys get trapped by themselves trying to reach out the fruit. Since the animal won't let go off the banana, the hunters can easily catch them.",
         hasAudio: false,
         elements: [
-            { asset: "scene-3ab-banana.png", top: 37, left: 51, width: 11, depth: 0.1 },
-            { asset: "scene-3ab-banana.png", top: 40, left: 56, width: 10, depth: 0.1 },
-            { asset: "scene-3ab-cage.png", top: 25, left: 47, width: 30, depth: 0.2 },
-            { asset: "scene-3ab-net.png", top: 0, left: 76, width: 30, depth: 0.25 },
-            { asset: "scene-3a-monkey.png", top: 46, left: 62, width: 30, depth: 0.25 }
+            { asset: "scene-3ab-banana.webp", top: 37, left: 51, width: 11, depth: 0.1 },
+            { asset: "scene-3ab-banana.webp", top: 40, left: 56, width: 10, depth: 0.1 },
+            { asset: "scene-3ab-cage.webp", top: 25, left: 47, width: 30, depth: 0.2 },
+            { asset: "scene-3ab-net.webp", top: 0, left: 76, width: 30, depth: 0.25 },
+            { asset: "scene-3a-monkey.webp", top: 46, left: 62, width: 30, depth: 0.25 }
         ],
         buttons: [
             { text: "Open the fist", toScene: "3b" }
@@ -145,14 +144,14 @@ const scenes = [
         textLayout: "left",
         gradientWH: 48,
         title: "The bait isn't worth the bars",
-        description: "Every time we refuse to let go something, like a relationship or the need of approval, we trap ourselves in a mental cage that produces nothing but fears and anxiety.",
+        description: "Every time we refuse to let go of something, like a broken relationship, constant perfection, or the need of approval, we trap ourselves in a mental cage that produces nothing but fears and anxiety.",
         hasAudio: false,
         elements: [
-            { asset: "scene-3ab-banana.png", top: 37, left: 51, width: 11, depth: 0.1 },
-            { asset: "scene-3ab-banana.png", top: 40, left: 56, width: 10, depth: 0.1 },
-            { asset: "scene-3ab-cage.png", top: 25, left: 47, width: 30, depth: 0.2 },
-            { asset: "scene-3ab-net.png", top: 30, left: 76, width: 30, depth: 0.25 },
-            { asset: "scene-3b-monkey.png", top: 30, left: 38, width: 35, depth: 0.25 }
+            { asset: "scene-3ab-banana.webp", top: 37, left: 51, width: 11, depth: 0.1 },
+            { asset: "scene-3ab-banana.webp", top: 40, left: 56, width: 10, depth: 0.1 },
+            { asset: "scene-3ab-cage.webp", top: 25, left: 47, width: 30, depth: 0.2 },
+            { asset: "scene-3ab-net.webp", top: 30, left: 76, width: 30, depth: 0.25 },
+            { asset: "scene-3b-monkey.webp", top: 30, left: 38, width: 35, depth: 0.25 }
         ],
         buttons: [
             { text: "Break free", toScene: "4a" }
@@ -169,8 +168,8 @@ const scenes = [
         description: "Happiness isn't missing. You're just looking for it at the wrong place. Giving up isn't a loss, it's the realization that you never needed those things to be happy.",
         hasAudio: false,
         elements: [
-            { asset: "scene-4a-mountains.png", top: 10, left: -20, width: 140, depth: 0.18 },
-            { asset: "scene-4a-silhouette.png", top: 60, left: 44, width: 8, depth: 0.3 },
+            { asset: "scene-4a-mountains.webp", top: 10, left: -20, width: 140, depth: 0.18 },
+            { asset: "scene-4a-silhouette.webp", top: 60, left: 44, width: 8, depth: 0.3 },
         ],
         buttons: [
             { text: "Clear the way", toScene: "4c" }
@@ -187,11 +186,11 @@ const scenes = [
         description: "In every situation, there's a new opportunity waiting to be seen. Renunciation clears the canvas, and creation fills it back with new challenges and meanings.",
         hasAudio: false,
         elements: [
-            { asset: "scene-4c-frame-erasing.png", top: 40, left: 12, width: 25, depth: 0.1 },
-            { asset: "scene-4c-eraser.png", top: 23, left: 26, width: 19, depth: 0.3 },
-            { asset: "scene-4c-frame-drawing.png", top: 48, left: 50, width: 25, depth: 0.1 },
-            { asset: "scene-4c-quill.png", top: 16, left: 66, width: 20, depth: 0.3 },
-            { asset: "scene-4c-quillink.png", top: 69, left: 72, width: 8, depth: 0.15 }
+            { asset: "scene-4c-frame-erasing.webp", top: 40, left: 12, width: 25, depth: 0.1 },
+            { asset: "scene-4c-eraser.webp", top: 23, left: 26, width: 19, depth: 0.3 },
+            { asset: "scene-4c-frame-drawing.webp", top: 48, left: 50, width: 25, depth: 0.1 },
+            { asset: "scene-4c-quill.webp", top: 16, left: 66, width: 20, depth: 0.3 },
+            { asset: "scene-4c-quillink.webp", top: 69, left: 72, width: 8, depth: 0.15 }
         ],
         buttons: [
             { text: "Look around", toScene: "5a" }
@@ -209,22 +208,22 @@ const scenes = [
         hasAudio: false,
         elements: [
             // Big
-            { asset: "scene-5a-fruit1.png", top: 18, left: 12, width: 12, depth: 0.18 },
-            { asset: "scene-5a-fruit4.png", top: 16, left: 78, width: 12, depth: 0.18 },
-            { asset: "scene-5a-fruit2.png", top: 40, left: 9, width: 12, depth: 0.18 },
-            { asset: "scene-5a-fruit3.png", top: 51, left: 80, width: 12, depth: 0.18 },
-            { asset: "scene-5a-fruit5.png", top: 66, left: 16, width: 12, depth: 0.18 },
-            { asset: "scene-5a-fruit6.png", top: 64, left: 65, width: 12, depth: 0.18 },
+            { asset: "scene-5a-fruit1.webp", top: 18, left: 12, width: 12, depth: 0.18 },
+            { asset: "scene-5a-fruit4.webp", top: 16, left: 78, width: 12, depth: 0.18 },
+            { asset: "scene-5a-fruit2.webp", top: 40, left: 9, width: 12, depth: 0.18 },
+            { asset: "scene-5a-fruit3.webp", top: 51, left: 80, width: 12, depth: 0.18 },
+            { asset: "scene-5a-fruit5.webp", top: 66, left: 16, width: 12, depth: 0.18 },
+            { asset: "scene-5a-fruit6.webp", top: 64, left: 65, width: 12, depth: 0.18 },
             // Small
-            { asset: "scene-5a-fruit6.png", top: 14, left: 40, width: 6, depth: 0.3 },
-            { asset: "scene-5a-fruit2.png", top: 21, left: 60, width: 5, depth: 0.4 },
-            { asset: "scene-5a-fruit1.png", top: 19, left: 50, width: 5, depth: 0.4 },
-            { asset: "scene-5a-fruit4.png", top: 65, left: 32, width: 5, depth: 0.4 },
-            { asset: "scene-5a-fruit5.png", top: 26, left: 70, width: 6, depth: 0.3 },
-            { asset: "scene-5a-fruit3.png", top: 18, left: 27, width: 5, depth: 0.4 },
-            { asset: "scene-5a-fruit3.png", top: 71, left: 40, width: 6, depth: 0.3 },
-            { asset: "scene-5a-fruit2.png", top: 70, left: 48, width: 5, depth: 0.4 },
-            { asset: "scene-5a-fruit1.png", top: 74, left: 57, width: 5, depth: 0.4 },
+            { asset: "scene-5a-fruit6.webp", top: 14, left: 40, width: 6, depth: 0.3 },
+            { asset: "scene-5a-fruit2.webp", top: 21, left: 60, width: 5, depth: 0.4 },
+            { asset: "scene-5a-fruit1.webp", top: 19, left: 50, width: 5, depth: 0.4 },
+            { asset: "scene-5a-fruit4.webp", top: 65, left: 32, width: 5, depth: 0.4 },
+            { asset: "scene-5a-fruit5.webp", top: 26, left: 70, width: 6, depth: 0.3 },
+            { asset: "scene-5a-fruit3.webp", top: 18, left: 27, width: 5, depth: 0.4 },
+            { asset: "scene-5a-fruit3.webp", top: 71, left: 40, width: 6, depth: 0.3 },
+            { asset: "scene-5a-fruit2.webp", top: 70, left: 48, width: 5, depth: 0.4 },
+            { asset: "scene-5a-fruit1.webp", top: 74, left: 57, width: 5, depth: 0.4 },
         ],
         buttons: [
             { text: "Look around", toScene: "5b" }
@@ -241,16 +240,16 @@ const scenes = [
         description: "Having more stuff doesn't make life better. Wealth is the ability to enjoy what we already possess.",
         hasAudio: false,
         elements: [
-            { asset: "scene-5b-spiral.png", top: 38, left: 10, width: 34, depth: 0.1 },
-            { asset: "scene-5b-rays.png", top: 40, left: 60, width: 30, depth: 0.1 },
-            { asset: "scene-5b-silhouette-sad.png", top: 59, left: 18, width: 14, depth: 0.2 },
-            { asset: "scene-5b-silhouette-happy.png", top: 54, left: 66, width: 14, depth: 0.2 },
-            { asset: "scene-5b-item1.png", top: 64, left: 12, width: 7, depth: 0.3 },
-            { asset: "scene-5b-item2.png", top: 44, left: 21, width: 7, depth: 0.46 },
-            { asset: "scene-5b-item3.png", top: 58, left: 33, width: 7, depth: 0.38 },
-            { asset: "scene-5a-fruit1.png", top: 62, left: 59, width: 7, depth: 0.3 },
-            { asset: "scene-5a-fruit2.png", top: 45, left: 70, width: 6, depth: 0.46 },
-            { asset: "scene-5a-fruit3.png", top: 64, left: 81, width: 7, depth: 0.38 },
+            { asset: "scene-5b-spiral.webp", top: 38, left: 10, width: 34, depth: 0.1 },
+            { asset: "scene-5b-rays.webp", top: 40, left: 60, width: 30, depth: 0.1 },
+            { asset: "scene-5b-silhouette-sad.webp", top: 59, left: 18, width: 14, depth: 0.2 },
+            { asset: "scene-5b-silhouette-happy.webp", top: 54, left: 66, width: 14, depth: 0.2 },
+            { asset: "scene-5b-item1.webp", top: 64, left: 12, width: 7, depth: 0.3 },
+            { asset: "scene-5b-item2.webp", top: 44, left: 21, width: 7, depth: 0.46 },
+            { asset: "scene-5b-item3.webp", top: 58, left: 33, width: 7, depth: 0.38 },
+            { asset: "scene-5a-fruit1.webp", top: 62, left: 59, width: 7, depth: 0.3 },
+            { asset: "scene-5a-fruit2.webp", top: 45, left: 70, width: 6, depth: 0.46 },
+            { asset: "scene-5a-fruit3.webp", top: 64, left: 81, width: 7, depth: 0.38 },
         ],
         buttons: [
             { text: "Continue", toScene: "6a" }
@@ -267,12 +266,12 @@ const scenes = [
         description: "Hold it for a minute, no problem. Hold it for an hour, your arm starts to ache. Hold it all day, and you are paralyzed! The weight never changes, only how long you grip it.",
         hasAudio: false,
         elements: [
-            { asset: "scene-6a-droplet1.png", top: 18, left: 12, width: 10, depth: 0.6 },
-            { asset: "scene-6a-droplet2.png", top: 20, left: 44, width: 12, depth: 0.5 },
-            { asset: "scene-6a-droplet3.png", top: 42, left: 15, width: 12, depth: 0.5 },
-            { asset: "scene-6a-droplet4.png", top: 68, left: 13, width: 10, depth: 0.6 },
-            { asset: "scene-6a-glass.png", top: 32, left: 28, width: 14, depth: 0.2 },
-            { asset: "scene-6a-hand.png", top: 43, left: 32, width: 38, depth: 0.4 }
+            { asset: "scene-6a-droplet1.webp", top: 18, left: 12, width: 10, depth: 0.6 },
+            { asset: "scene-6a-droplet2.webp", top: 20, left: 44, width: 12, depth: 0.5 },
+            { asset: "scene-6a-droplet3.webp", top: 42, left: 15, width: 12, depth: 0.5 },
+            { asset: "scene-6a-droplet4.webp", top: 68, left: 13, width: 10, depth: 0.6 },
+            { asset: "scene-6a-glass.webp", top: 32, left: 28, width: 14, depth: 0.2 },
+            { asset: "scene-6a-hand.webp", top: 43, left: 32, width: 38, depth: 0.4 }
         ],
         buttons: [
             { text: "Keep holding", toScene: "6b" }
@@ -289,12 +288,12 @@ const scenes = [
         description: "Constantly obsessing about that exam, the meeting, or the \"what ifs\" turns into paralyzing anxiety when we refuse to set those thoughts down. We are the ones keeping our arms raised, and we are the only ones who can set the glass down.",
         hasAudio: false,
         elements: [
-            { asset: "scene-6b-droplet4.png", top: 53, left: 2, width: 35, depth: 0.2 },
-            { asset: "scene-6b-droplet3.png", top: 28, left: 4, width: 30, depth: 0.2 },
-            { asset: "scene-6b-droplet1.png", top: 55, left: 32, width: 38, depth: 0.2 },
-            { asset: "scene-6b-droplet2.png", top: 22, left: 31, width: 36, depth: 0.2 },
-            { asset: "scene-6b-glass.png", top: 32, left: 28, width: 14, depth: 0.6 },
-            { asset: "scene-6b-hand.png", top: 43, left: 32, width: 38, depth: 0.8 }
+            { asset: "scene-6b-droplet4.webp", top: 53, left: 2, width: 35, depth: 0.2 },
+            { asset: "scene-6b-droplet3.webp", top: 28, left: 4, width: 30, depth: 0.2 },
+            { asset: "scene-6b-droplet1.webp", top: 55, left: 32, width: 38, depth: 0.2 },
+            { asset: "scene-6b-droplet2.webp", top: 22, left: 31, width: 36, depth: 0.2 },
+            { asset: "scene-6b-glass.webp", top: 32, left: 28, width: 14, depth: 0.6 },
+            { asset: "scene-6b-hand.webp", top: 43, left: 32, width: 38, depth: 0.8 }
         ],
         buttons: [
             { text: "Open the hand", toScene: "6c" }
@@ -311,12 +310,12 @@ const scenes = [
         description: "The moment your hand opens and you detach from the outcome of those worries, you can feel the relief. Stepping back isn't failure; it's what frees you to keep moving forward.",
         hasAudio: false,
         elements: [
-            { asset: "scene-6c-droplet1.png", top: 68, left: 10, width: 18, depth: 0.05 },
-            { asset: "scene-6c-droplet4.png", top: 62, left: 28, width: 10, depth: 0.05 },
-            { asset: "scene-6c-droplet2.png", top: 59, left: 48, width: 12, depth: 0.05 },
-            { asset: "scene-6c-droplet3.png", top: 72, left: 40, width: 8, depth: 0.05 },
-            { asset: "scene-6c-glass.png", top: 20, left: 15, width: 17, depth: 0.4 },
-            { asset: "scene-6c-hand.png", top: 43, left: 30, width: 38, depth: 0.6 }
+            { asset: "scene-6c-droplet1.webp", top: 68, left: 10, width: 18, depth: 0.05 },
+            { asset: "scene-6c-droplet4.webp", top: 62, left: 28, width: 10, depth: 0.05 },
+            { asset: "scene-6c-droplet2.webp", top: 59, left: 48, width: 12, depth: 0.05 },
+            { asset: "scene-6c-droplet3.webp", top: 72, left: 40, width: 8, depth: 0.05 },
+            { asset: "scene-6c-glass.webp", top: 20, left: 15, width: 17, depth: 0.4 },
+            { asset: "scene-6c-hand.webp", top: 43, left: 30, width: 38, depth: 0.6 }
         ],
         buttons: [
             { text: "See the path", toScene: "7a" }
@@ -334,25 +333,25 @@ const scenes = [
         hasAudio: false,
         elements: [
             // Tiny
-            { asset: "scene-7a-leafdecor1.png", top: 13, left: 36, width: 5, depth: 0.6 },
-            { asset: "scene-7a-leafdecor6.png", top: 26, left: 40, width: 5, depth: 0.7 },
-            { asset: "scene-7a-leafdecor4.png", top: 30, left: 55, width: 5, depth: 0.5 },
-            { asset: "scene-7a-leafdecor3.png", top: 20, left: 64, width: 5, depth: 0.7 },
-            { asset: "scene-7a-leafdecor5.png", top: 16, left: 74, width: 5, depth: 0.6 },
-            { asset: "scene-7a-leafdecor4.png", top: 42, left: 80, width: 5, depth: 0.5 },
-            { asset: "scene-7a-leafdecor1.png", top: 56, left: 73, width: 5, depth: 0.5 },
-            { asset: "scene-7a-leafdecor6.png", top: 63, left: 63, width: 5, depth: 0.6 },
-            { asset: "scene-7a-leafdecor2.png", top: 62, left: 81, width: 5, depth: 0.7 },
-            { asset: "scene-7a-leafdecor3.png", top: 80, left: 60, width: 5, depth: 0.7 },
-            { asset: "scene-7a-leafdecor2.png", top: 64, left: 36, width: 5, depth: 0.6 },
+            { asset: "scene-7a-leafdecor1.webp", top: 13, left: 36, width: 5, depth: 0.6 },
+            { asset: "scene-7a-leafdecor6.webp", top: 26, left: 40, width: 5, depth: 0.7 },
+            { asset: "scene-7a-leafdecor4.webp", top: 30, left: 55, width: 5, depth: 0.5 },
+            { asset: "scene-7a-leafdecor3.webp", top: 20, left: 64, width: 5, depth: 0.7 },
+            { asset: "scene-7a-leafdecor5.webp", top: 16, left: 74, width: 5, depth: 0.6 },
+            { asset: "scene-7a-leafdecor4.webp", top: 42, left: 80, width: 5, depth: 0.5 },
+            { asset: "scene-7a-leafdecor1.webp", top: 56, left: 73, width: 5, depth: 0.5 },
+            { asset: "scene-7a-leafdecor6.webp", top: 63, left: 63, width: 5, depth: 0.6 },
+            { asset: "scene-7a-leafdecor2.webp", top: 62, left: 81, width: 5, depth: 0.7 },
+            { asset: "scene-7a-leafdecor3.webp", top: 80, left: 60, width: 5, depth: 0.7 },
+            { asset: "scene-7a-leafdecor2.webp", top: 64, left: 36, width: 5, depth: 0.6 },
             // Large
-            { asset: "scene-7a-leaf3.png", top: 8, left: 45, width: 16, depth: 0.38 },
-            { asset: "scene-7a-leaf2.png", top: 20, left: 74, width: 15, depth: 0.38 },
-            { asset: "scene-7a-leaf1.png", top: 67, left: 68, width: 18, depth: 0.38 },
-            { asset: "scene-7a-leaf4.png", top: 63, left: 38, width: 22, depth: 0.38 },
+            { asset: "scene-7a-leaf3.webp", top: 8, left: 45, width: 16, depth: 0.38 },
+            { asset: "scene-7a-leaf2.webp", top: 20, left: 74, width: 15, depth: 0.38 },
+            { asset: "scene-7a-leaf1.webp", top: 67, left: 68, width: 18, depth: 0.38 },
+            { asset: "scene-7a-leaf4.webp", top: 63, left: 38, width: 22, depth: 0.38 },
             
-            { asset: "scene-7a-silhouette.png", top: 58, left: 20, width: 11, depth: 0.3 },
-            { asset: "scene-7a-spotlight.png", top: 0, left: 10, width: 30, depth: 0.4 },
+            { asset: "scene-7a-silhouette.webp", top: 58, left: 20, width: 11, depth: 0.3 },
+            { asset: "scene-7a-spotlight.webp", top: 0, left: 10, width: 30, depth: 0.4 },
         ],
         buttons: [
             { text: "Step outside", toScene: "7b" }
@@ -369,16 +368,16 @@ const scenes = [
         description: "Bad traffic, long lines, or a spilled coffee aren't real disasters. Believing that life should always go smoothly is what makes small disruptions feel impossible. Even a delay is just extra time you didn't know you had!",
         hasAudio: false,
         elements: [
-            { asset: "scene-7b-bottom-bubble.png", top: 0, left: 58, width: 40, depth: 0.3 },
-            { asset: "scene-7b-explosion.png", top: 3, left: 59, width: 37, depth: 0.1 },
-            { asset: "scene-7b-jet1.png", top: 20, left: 60, width: 11, depth: 0.2 },
-            { asset: "scene-7b-jet2.png", top: 32, left: 73, width: 9, depth: 0.28 },
-            { asset: "scene-7b-jet3.png", top: 13, left: 80, width: 7, depth: 0.2 },
-            { asset: "scene-7b-bomb1.png", top: 34, left: 84, width: 7, depth: 0.15 },
-            { asset: "scene-7b-bomb1-details.png", top: 29, left: 89, width: 4, depth: 0.2 },
-            { asset: "scene-7b-bomb2.png", top: 44, left: 66, width: 5, depth: 0.18 },
-            { asset: "scene-7b-bomb2-details.png", top: 40, left: 64.2, width: 3, depth: 0.2 },
-            { asset: "scene-7b-top-bubble.png", top: -5, left: 55, width: 46, depth: 0.36 },
+            { asset: "scene-7b-bottom-bubble.webp", top: 0, left: 58, width: 40, depth: 0.3 },
+            { asset: "scene-7b-explosion.webp", top: 3, left: 59, width: 37, depth: 0.1 },
+            { asset: "scene-7b-jet1.webp", top: 20, left: 60, width: 11, depth: 0.2 },
+            { asset: "scene-7b-jet2.webp", top: 32, left: 73, width: 9, depth: 0.28 },
+            { asset: "scene-7b-jet3.webp", top: 13, left: 80, width: 7, depth: 0.2 },
+            { asset: "scene-7b-bomb1.webp", top: 34, left: 84, width: 7, depth: 0.15 },
+            { asset: "scene-7b-bomb1-details.webp", top: 29, left: 89, width: 4, depth: 0.2 },
+            { asset: "scene-7b-bomb2.webp", top: 44, left: 66, width: 5, depth: 0.18 },
+            { asset: "scene-7b-bomb2-details.webp", top: 40, left: 64.2, width: 3, depth: 0.2 },
+            { asset: "scene-7b-top-bubble.webp", top: -5, left: 55, width: 46, depth: 0.36 },
         ],
         buttons: [
             { text: "Shift your perspective", toScene: "7c" }
@@ -395,31 +394,31 @@ const scenes = [
         description: "Life fills this chest with every kind of moment, good or messy. None of them are catastrophes, and your only job is to reach in and find what can be enjoyed.",
         hasAudio: false,
         elements: [
-            { asset: "scene-7c-chest-bg.png", top: 37.9, left: 37.8, width: 33.2, depth: 0.3 },
-            { asset: "scene-7c-chest2.png", top: 9.68, left: 38, width: 39.4, depth: 0.3 },
-            { asset: "scene-7c-letter1.png", top: 34, left: 39, width: 14, depth: 0.43 },
-            { asset: "scene-7c-letter2.png", top: 10, left: 46, width: 13, depth: 0.52 },
-            { asset: "scene-7c-letter3.png", top: 8, left: 10, width: 14, depth: 0.52 },
-            { asset: "scene-7c-letter4.png", top: 22, left: 26, width: 14, depth: 0.43 },
-            { asset: "scene-7c-letter5.png", top: 29, left: 56, width: 10.5, depth: 0.52 },
-            { asset: "scene-7c-letter6.png", top: 30, left: 78, width: 14, depth: 0.43 },
-            { asset: "scene-7c-letter7.png", top: 2, left: 67, width: 14, depth: 0.43 },
-            { asset: "scene-7c-letter8.png", top: 46, left: 12, width: 14, depth: 0.52 },
-            { asset: "scene-7c-letter-blank6.png", top: 44, left: 51.5, width: 6, depth: 0.3 },
-            { asset: "scene-7c-letter-blank1.png", top: 38, left: 65, width: 6, depth: 0.3 },
-            { asset: "scene-7c-letter-blank5.png", top: 27, left: 50, width: 6, depth: 0.3 },
-            { asset: "scene-7c-letter-blank4.png", top: 20, left: 62, width: 6, depth: 0.4 },
-            { asset: "scene-7c-letter-blank3.png", top: 30, left: 12, width: 4, depth: 0.3 },
-            { asset: "scene-7c-letter-blank6.png", top: 40, left: 20, width: 4, depth: 0.5 },
-            { asset: "scene-7c-letter-blank2.png", top: 26, left: 71, width: 4, depth: 0.5 },
-            { asset: "scene-7c-letter-blank7.png", top: 50, left: 29, width: 6, depth: 0.3 },
-            { asset: "scene-7c-letter-blank8.png", top: 54, left: 78, width: 4, depth: 0.5 },
-            { asset: "scene-7c-letter-blank1.png", top: 48, left: 88, width: 6, depth: 0.6 },
-            { asset: "scene-7c-letter-blank3.png", top: 18, left: 83, width: 4, depth: 0.7 },
-            { asset: "scene-7c-letter-blank7.png", top: 5, left: 40, width: 4, depth: 0.2 },
-            { asset: "scene-7c-letter-blank5.png", top: 8, left: 28, width: 6, depth: 0.7 },
-            { asset: "scene-7c-letter-blank2.png", top: 18, left: 40, width: 4, depth: 0.3 },
-            { asset: "scene-7c-chest1.png", top: 42, left: 38, width: 34, depth: 0.3 },
+            { asset: "scene-7c-chest-bg.webp", top: 37.9, left: 37.8, width: 33.2, depth: 0.3 },
+            { asset: "scene-7c-chest2.webp", top: 9.68, left: 38, width: 39.4, depth: 0.3 },
+            { asset: "scene-7c-letter1.webp", top: 34, left: 39, width: 14, depth: 0.43 },
+            { asset: "scene-7c-letter2.webp", top: 10, left: 46, width: 13, depth: 0.52 },
+            { asset: "scene-7c-letter3.webp", top: 8, left: 10, width: 14, depth: 0.52 },
+            { asset: "scene-7c-letter4.webp", top: 22, left: 26, width: 14, depth: 0.43 },
+            { asset: "scene-7c-letter5.webp", top: 29, left: 56, width: 10.5, depth: 0.52 },
+            { asset: "scene-7c-letter6.webp", top: 30, left: 78, width: 14, depth: 0.43 },
+            { asset: "scene-7c-letter7.webp", top: 2, left: 67, width: 14, depth: 0.43 },
+            { asset: "scene-7c-letter8.webp", top: 46, left: 12, width: 14, depth: 0.52 },
+            { asset: "scene-7c-letter-blank6.webp", top: 44, left: 51.5, width: 6, depth: 0.3 },
+            { asset: "scene-7c-letter-blank1.webp", top: 38, left: 65, width: 6, depth: 0.3 },
+            { asset: "scene-7c-letter-blank5.webp", top: 27, left: 50, width: 6, depth: 0.3 },
+            { asset: "scene-7c-letter-blank4.webp", top: 20, left: 62, width: 6, depth: 0.4 },
+            { asset: "scene-7c-letter-blank3.webp", top: 30, left: 12, width: 4, depth: 0.3 },
+            { asset: "scene-7c-letter-blank6.webp", top: 40, left: 20, width: 4, depth: 0.5 },
+            { asset: "scene-7c-letter-blank2.webp", top: 26, left: 71, width: 4, depth: 0.5 },
+            { asset: "scene-7c-letter-blank7.webp", top: 50, left: 29, width: 6, depth: 0.3 },
+            { asset: "scene-7c-letter-blank8.webp", top: 54, left: 78, width: 4, depth: 0.5 },
+            { asset: "scene-7c-letter-blank1.webp", top: 48, left: 88, width: 6, depth: 0.6 },
+            { asset: "scene-7c-letter-blank3.webp", top: 18, left: 83, width: 4, depth: 0.7 },
+            { asset: "scene-7c-letter-blank7.webp", top: 5, left: 40, width: 4, depth: 0.2 },
+            { asset: "scene-7c-letter-blank5.webp", top: 8, left: 28, width: 6, depth: 0.7 },
+            { asset: "scene-7c-letter-blank2.webp", top: 18, left: 40, width: 4, depth: 0.3 },
+            { asset: "scene-7c-chest1.webp", top: 42, left: 38, width: 34, depth: 0.3 },
         ],
         buttons: [
             { text: "Feel the lightness", toScene: "8" }
@@ -436,13 +435,13 @@ const scenes = [
         description: "Actually... nothing is. When you drop the heavy grip of expectations, you see that ordinary moments were never your enemy. Renunciation empties your hands so you can finally enjoy what's in front of you; now you decide what you actually care to hold.",
         hasAudio: false,
         elements: [
-            { asset: "scene-8-b3.png", top: 35, left: 25, width: 78, depth: 0.2 },
-            { asset: "scene-8-b2.png", top: 40, left: 25, width: 78, depth: 0.3 },
-            { asset: "scene-8-b1.png", top: 45, left: 25, width: 78, depth: 0.4 },
-            { asset: "scene-8-balloon1.png", top: 8, left: 53, width: 14.5, depth: 0.55 },
-            { asset: "scene-8-balloon3.png", top: 28, left: 40, width: 10, depth: 0.36 },
-            { asset: "scene-8-balloon2.png", top: 12, left: 82, width: 8, depth: 0.26 },
-            { asset: "scene-8-balloon4.png", top: 28, left: 70, width: 10, depth: 0.48 },
+            { asset: "scene-8-b3.webp", top: 35, left: 25, width: 78, depth: 0.2 },
+            { asset: "scene-8-b2.webp", top: 40, left: 25, width: 78, depth: 0.3 },
+            { asset: "scene-8-b1.webp", top: 45, left: 25, width: 78, depth: 0.4 },
+            { asset: "scene-8-balloon1.webp", top: 8, left: 53, width: 14.5, depth: 0.55 },
+            { asset: "scene-8-balloon3.webp", top: 28, left: 40, width: 10, depth: 0.36 },
+            { asset: "scene-8-balloon2.webp", top: 12, left: 82, width: 8, depth: 0.26 },
+            { asset: "scene-8-balloon4.webp", top: 28, left: 70, width: 10, depth: 0.48 },
         ],
         buttons: [
             { text: "Back to beginning", icon: "house", toScene: "1" },
