@@ -4,6 +4,10 @@
     --scene-immersive-color: #f5e6d3;
 }
 
+html {
+    background-color: var(--scene-immersive-color);
+}
+
 body,
 .main-wrapper-scene {
     transition: background-color 0.25s ease-in;

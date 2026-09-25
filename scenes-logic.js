@@ -38,16 +38,24 @@ function buildScene(scene) {
         elementLayer.className = 'movable-layer';
         elementLayer.dataset.depth = element.depth;
 
+        const animatedWrapper = document.createElement('div');
+        animatedWrapper.className = `animate-div ${element.animation ? element.animation : ''}`;
+        if (element.animationDuration) {
+            animatedWrapper.style.animationDuration = `${element.animationDuration}s`;
+        }
+        animatedWrapper.style.position = 'absolute';
+        animatedWrapper.style.top = `${element.top}%`;
+        animatedWrapper.style.left = `${element.left}%`;
+        animatedWrapper.style.width = `${element.width}%`;
+
         const elementImg = document.createElement('img');
         elementImg.src = `./assets/elements/${element.asset}`;
         elementImg.alt = "";
         elementImg.draggable = false;
-        elementImg.style.position = 'absolute';
-        elementImg.style.top = `${element.top}%`;
-        elementImg.style.left = `${element.left}%`;
-        elementImg.style.width = `${element.width}%`;
-        elementLayer.appendChild(elementImg);
+        elementImg.style.width = '100%';
 
+        animatedWrapper.appendChild(elementImg);
+        elementLayer.appendChild(animatedWrapper);
         parallaxScene.appendChild(elementLayer);
     });
 

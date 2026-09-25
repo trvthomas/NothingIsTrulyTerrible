@@ -10,11 +10,11 @@ const scenes = [
         description: "A visual journey through Rafael Santandreu's ideas of renunciation and creation, showing how letting go clears the space to find joy anywhere. Step in to explore how light life feels on the other side.",
         hasAudio: false,
         elements: [
-            { asset: "scene-1-b3.webp", top: 35, left: 25, width: 78, depth: 0.2 },
-            { asset: "scene-1-b2.webp", top: 40, left: 25, width: 78, depth: 0.3 },
-            { asset: "scene-1-b1.webp", top: 45, left: 25, width: 78, depth: 0.4 },
-            { asset: "scene-1-lightning.webp", top: 0, left: 42, width: 32, depth: 0.1 },
-            { asset: "scene-1-lightning.webp", top: 2, left: 68, width: 28, depth: 0.1 },
+            { asset: "scene-1-b3.webp", top: 35, left: 25, width: 78, depth: 0.2, animation: "move-x", animationDuration: 3 },
+            { asset: "scene-1-b2.webp", top: 40, left: 25, width: 78, depth: 0.3, animation: "move-x", animationDuration: 3 },
+            { asset: "scene-1-b1.webp", top: 45, left: 25, width: 78, depth: 0.4, animation: "move-x", animationDuration: 1.5 },
+            { asset: "scene-1-lightning.webp", top: 0, left: 42, width: 32, depth: 0.1, animation: "flicker", animationDuration: 3 },
+            { asset: "scene-1-lightning.webp", top: 2, left: 68, width: 28, depth: 0.1, animation: "flicker", animationDuration: 5 },
         ],
         buttons: [
             { text: "Step Inside", icon: "chevron-right", toScene: "2" },
@@ -97,19 +97,19 @@ const scenes = [
         elements: [
             // Items
             { asset: "scene-2-item1.webp", top: 24, left: 12, width: 12, depth: 0.36 },
-            { asset: "scene-2-item4.webp", top: 18, left: 49, width: 10, depth: 0.36 },
-            { asset: "scene-2-item3.webp", top: 23, left: 80, width: 8, depth: 0.36 },
-            { asset: "scene-2-item2.webp", top: 69, left: 13, width: 11, depth: 0.36 },
-            { asset: "scene-2-item5.webp", top: 77, left: 49, width: 9, depth: 0.36 },
-            { asset: "scene-2-item6.webp", top: 71, left: 82, width: 11, depth: 0.36 },
+            { asset: "scene-2-item4.webp", top: 18, left: 49, width: 10, depth: 0.36, animation: "shake-m", animationDuration: 1.4 },
+            { asset: "scene-2-item3.webp", top: 23, left: 80, width: 8, depth: 0.36, animation: "shake-m", animationDuration: 0.8 },
+            { asset: "scene-2-item2.webp", top: 69, left: 13, width: 11, depth: 0.36, animation: "shake-m", animationDuration: 1.8 },
+            { asset: "scene-2-item5.webp", top: 77, left: 49, width: 9, depth: 0.36, animation: "shake-m", animationDuration: 1.4 },
+            { asset: "scene-2-item6.webp", top: 71, left: 82, width: 11, depth: 0.36, animation: "shake-m", animationDuration: 0.8 },
 
             // Tangles
-            { asset: "scene-2-tangle1.webp", top: 3, left: 10, width: 16, depth: 0.18 },
-            { asset: "scene-2-tangle2.webp", top: -2, left: 46, width: 16, depth: 0.18 },
-            { asset: "scene-2-tangle3.webp", top: 18, left: 76, width: 23, depth: 0.18 },
-            { asset: "scene-2-tangle4.webp", top: 57, left: 7, width: 23, depth: 0.18 },
-            { asset: "scene-2-tangle5.webp", top: 66, left: 42, width: 21, depth: 0.18 },
-            { asset: "scene-2-tangle6.webp", top: 58, left: 76, width: 23, depth: 0.18 },
+            { asset: "scene-2-tangle1.webp", top: 3, left: 10, width: 16, depth: 0.18,  animation: "heart-beat", animationDuration: 5 },
+            { asset: "scene-2-tangle2.webp", top: -2, left: 46, width: 16, depth: 0.18,  animation: "heart-beat", animationDuration: 3 },
+            { asset: "scene-2-tangle3.webp", top: 18, left: 76, width: 23, depth: 0.18,  animation: "heart-beat", animationDuration: 3 },
+            { asset: "scene-2-tangle4.webp", top: 57, left: 7, width: 23, depth: 0.18,  animation: "heart-beat", animationDuration: 4 },
+            { asset: "scene-2-tangle5.webp", top: 66, left: 42, width: 21, depth: 0.18,  animation: "heart-beat", animationDuration: 5 },
+            { asset: "scene-2-tangle6.webp", top: 58, left: 76, width: 23, depth: 0.18,  animation: "heart-beat", animationDuration: 4 },
         ],
         buttons: [
             { text: "See who holds the bars", toScene: "3a" }
@@ -126,11 +126,11 @@ const scenes = [
         description: "Or is the monkey holding the cage? Hunters build cages for the banana. This way, the monkeys get trapped by themselves trying to reach out the fruit. Since the animal won't let go off the banana, the hunters can easily catch them.",
         hasAudio: false,
         elements: [
-            { asset: "scene-3ab-banana.webp", top: 37, left: 51, width: 11, depth: 0.1 },
-            { asset: "scene-3ab-banana.webp", top: 40, left: 56, width: 10, depth: 0.1 },
+            { asset: "scene-3ab-banana.webp", top: 37, left: 51, width: 11, depth: 0.1, animation: "shake-m", animationDuration: 1.4 },
+            { asset: "scene-3ab-banana.webp", top: 40, left: 56, width: 10, depth: 0.1, animation: "shake-m", animationDuration: 1.6 },
             { asset: "scene-3ab-cage.webp", top: 25, left: 47, width: 30, depth: 0.2 },
-            { asset: "scene-3ab-net.webp", top: 0, left: 76, width: 30, depth: 0.25 },
-            { asset: "scene-3a-monkey.webp", top: 46, left: 62, width: 30, depth: 0.25 }
+            { asset: "scene-3ab-net.webp", top: 0, left: 76, width: 30, depth: 0.25, animation: "wobble", animationDuration: 3 },
+            { asset: "scene-3a-monkey.webp", top: 46, left: 62, width: 30, depth: 0.25, animation: "move-y", animationDuration: 3 }
         ],
         buttons: [
             { text: "Open the fist", toScene: "3b" }
@@ -147,11 +147,11 @@ const scenes = [
         description: "Every time we refuse to let go of something, like a broken relationship, constant perfection, or the need of approval, we trap ourselves in a mental cage that produces nothing but fears and anxiety.",
         hasAudio: false,
         elements: [
-            { asset: "scene-3ab-banana.webp", top: 37, left: 51, width: 11, depth: 0.1 },
-            { asset: "scene-3ab-banana.webp", top: 40, left: 56, width: 10, depth: 0.1 },
+            { asset: "scene-3ab-banana.webp", top: 37, left: 51, width: 11, depth: 0.1, animation: "shake-m", animationDuration: 1.4 },
+            { asset: "scene-3ab-banana.webp", top: 40, left: 56, width: 10, depth: 0.1, animation: "shake-m", animationDuration: 1.6 },
             { asset: "scene-3ab-cage.webp", top: 25, left: 47, width: 30, depth: 0.2 },
-            { asset: "scene-3ab-net.webp", top: 30, left: 76, width: 30, depth: 0.25 },
-            { asset: "scene-3b-monkey.webp", top: 30, left: 38, width: 35, depth: 0.25 }
+            { asset: "scene-3ab-net.webp", top: 30, left: 76, width: 30, depth: 0.25, animation: "wobble", animationDuration: 3 },
+            { asset: "scene-3b-monkey.webp", top: 30, left: 38, width: 35, depth: 0.25, animation: "move-x", animationDuration: 3 }
         ],
         buttons: [
             { text: "Break free", toScene: "4a" }
@@ -186,11 +186,11 @@ const scenes = [
         description: "In every situation, there's a new opportunity waiting to be seen. Renunciation clears the canvas, and creation fills it back with new challenges and meanings.",
         hasAudio: false,
         elements: [
-            { asset: "scene-4c-frame-erasing.webp", top: 40, left: 12, width: 25, depth: 0.1 },
-            { asset: "scene-4c-eraser.webp", top: 23, left: 26, width: 19, depth: 0.3 },
-            { asset: "scene-4c-frame-drawing.webp", top: 48, left: 50, width: 25, depth: 0.1 },
-            { asset: "scene-4c-quill.webp", top: 16, left: 66, width: 20, depth: 0.3 },
-            { asset: "scene-4c-quillink.webp", top: 69, left: 72, width: 8, depth: 0.15 }
+            { asset: "scene-4c-frame-erasing.webp", top: 40, left: 12, width: 25, depth: 0.1, animation: "shake-m", animationDuration: 15 },
+            { asset: "scene-4c-eraser.webp", top: 23, left: 26, width: 19, depth: 0.3, animation: "shake-tr", animationDuration: 2 },
+            { asset: "scene-4c-frame-drawing.webp", top: 48, left: 50, width: 25, depth: 0.1, animation: "heart-beat", animationDuration: 10 },
+            { asset: "scene-4c-quill.webp", top: 16, left: 66, width: 20, depth: 0.3, animation: "move-bltp", animationDuration: 1 },
+            { asset: "scene-4c-quillink.webp", top: 69, left: 72, width: 8, depth: 0.15, animation: "bounce-t", animationDuration: 2 }
         ],
         buttons: [
             { text: "Look around", toScene: "5a" }

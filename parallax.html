@@ -8,13 +8,32 @@
     <meta charset="utf-8">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <style>
+        .yea div{
+            animation: floatAnimation 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes floatAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(1deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
     <button id="btnPermission" onclick="gyro()" disabled>enable parallax</button>
     <div class="main-wrapper-scene">
         <div id="main-scene">
-            <div data-depth="0.1">test?</div>
+            <div data-depth="0.4" class="yea">
+                <div>
+                    test?
+                </div>
+            </div>
             <div data-depth="0.6">test2</div>
         </div>
     </div>
@@ -29,74 +48,35 @@
         let parallaxInstance;
         let enableButton = document.getElementById('btnPermission');
         document.addEventListener('DOMContentLoaded', () => {
-            const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-            const isIOS = typeof DeviceOrientationEvent !== 'undefined' &&
-                typeof DeviceOrientationEvent.requestPermission === 'function';
+            const ua = navigator.userAgent;
 
-            if (!isTouchDevice || !isIOS) {
+            const isIOS = /iPhone|iPad|iPod/.test(ua);
+            const isIPadOS = ua.includes('Macintosh') && navigator.maxTouchPoints > 1;
+
+            if (isIOS || isIPadOS) {
+                addLog("Apple device detected");
+                enableButton.disabled = false;
+            } else {
                 addLog("non ios or touch, starting")
                 parallaxInstance = new Parallax(scene);
-                return;
             }
-
-            // iOS touch device: verify if gyro is already active
-            let hasData = false;
-
-            const checkEvent = (e) => {
-                addLog("checking events");
-                if (e.alpha !== null || e.beta !== null || e.gamma !== null) {
-                    addLog("gyro data detected, starting", {
-                                calibrateX: true,
-                                calibrateY: true,
-                                scalarX: 10.0,
-                                scalarY: 10.0
-                            });
-                    hasData = true;
-                    window.removeEventListener('deviceorientation', checkEvent);
-                    parallaxInstance = new Parallax(scene);
-                }
-            };
-
-            window.addEventListener('deviceorientation', checkEvent);
-
-            setTimeout(() => {
-                window.removeEventListener('deviceorientation', checkEvent);
-                if (!hasData) {
-                    addLog("no gyro data detected, manually start");
-                    enableButton.disabled = false;
-                }
-            }, 500);
         });
 
         function gyro() {
-            if (typeof DeviceOrientationEvent !== 'undefined' &&
-                typeof DeviceOrientationEvent.requestPermission === 'function') {
-
-                DeviceOrientationEvent.requestPermission()
-                    .then(response => {
-                        if (response === 'granted') {
-                            if (parallaxInstance) {
-                                parallaxInstance.destroy();
-                            }
-                            parallaxInstance = new Parallax(scene, {
-                                calibrateX: true,
-                                calibrateY: true,
-                                scalarX: 10.0,
-                                scalarY: 10.0
-                            });
-
-                            if (typeof parallaxInstance.enable === 'function') {
-                                parallaxInstance.enable();
-                            }
-
-                            enableButton.disabled = true;
-                        }
-                    })
-                    .catch(console.error);
-            } else {
-                parallaxInstance = new Parallax(scene);
-                enableButton.disabled = true;
-            }
+            DeviceOrientationEvent
+                .requestPermission()
+                .then(() => {
+                    parallaxInstance = new Parallax(scene, {
+                        relativeInput: true,
+                        hoverOnly: false,
+                        invertX: false,
+                        invertY: false,
+                        scalarX: 15.0,  // Boost sensitivity to verify movement
+                        scalarY: 15.0
+                    });
+                    enableButton.disabled = true;
+                });
+            addLog("yei!")
         }
 
         function addLog(message) {
