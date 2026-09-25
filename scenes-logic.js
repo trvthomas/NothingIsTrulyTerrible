@@ -43,6 +43,9 @@ function buildScene(scene) {
         if (element.animationDuration) {
             animatedWrapper.style.animationDuration = `${element.animationDuration}s`;
         }
+        if (element.animationReverse) {
+            animatedWrapper.style.animationDirection = 'alternate-reverse';
+        }
         animatedWrapper.style.position = 'absolute';
         animatedWrapper.style.top = `${element.top}%`;
         animatedWrapper.style.left = `${element.left}%`;
