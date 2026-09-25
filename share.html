@@ -12,17 +12,57 @@
     <link rel="stylesheet" href="./scene-styling.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <link href="https://trvsolutions-customer-resources.s3.amazonaws.com/fontawesome-icons/css/fontawesome.min.css" rel="stylesheet">
-	<link href="https://trvsolutions-customer-resources.s3.amazonaws.com/fontawesome-icons/css/brands.min.css" rel="stylesheet">
-	<link href="https://trvsolutions-customer-resources.s3.amazonaws.com/fontawesome-icons/css/regular.min.css" rel="stylesheet">
-	<link href="https://trvsolutions-customer-resources.s3.amazonaws.com/fontawesome-icons/css/solid.min.css" rel="stylesheet">
-	<link href="https://trvsolutions-customer-resources.s3.amazonaws.com/fontawesome-icons/css/v5-font-face.min.css" rel="stylesheet">
+    <link href="https://trvsolutions-customer-resources.s3.amazonaws.com/fontawesome-icons/css/fontawesome.min.css"
+        rel="stylesheet">
+    <link href="https://trvsolutions-customer-resources.s3.amazonaws.com/fontawesome-icons/css/brands.min.css"
+        rel="stylesheet">
+    <link href="https://trvsolutions-customer-resources.s3.amazonaws.com/fontawesome-icons/css/regular.min.css"
+        rel="stylesheet">
+    <link href="https://trvsolutions-customer-resources.s3.amazonaws.com/fontawesome-icons/css/solid.min.css"
+        rel="stylesheet">
+    <link href="https://trvsolutions-customer-resources.s3.amazonaws.com/fontawesome-icons/css/v5-font-face.min.css"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        Share!!
+    <div class="share-div">
+        <img src="./assets/words-title.png" alt="Title: Nothing Is Truly Terrible" />
+
+        <div>
+            <i class="fa-solid fa-bullhorn icon-share"></i>
+            <h1>Share this experience</h1>
+            <p>Know someone holding onto too much? Share the journey with a friend!</p>
+
+            <div class="buttons-container" style="justify-content: center;">
+                <button onclick="copyLink()"><span>Copy Link</span> <span class="button-icon"><i
+                            class="fa-solid fa-link"></i></span></button>
+                <button onclick="share()"><span>Share</span> <span class="button-icon"><i
+                            class="fa-solid fa-share-nodes"></i></span></button>
+            </div>
+        </div>
     </div>
+
+    <script>
+        function copyLink() {
+            navigator.clipboard.writeText("https://trvthomas.github.io/NothingIsTrulyTerrible");
+            alert("Link copied to clipboard!");
+        }
+
+        async function share() {
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        text: "What if nothing is truly terrible? A quick visual reminder to drop the weight: https://trvthomas.github.io/NothingIsTrulyTerrible"
+                    });
+                } catch (err) {
+                    return;
+                }
+            } else {
+                navigator.clipboard.writeText("https://trvthomas.github.io/NothingIsTrulyTerrible");
+                alert("Link copied to clipboard!");
+            }
+        }
+    </script>
 </body>
 
 </html>

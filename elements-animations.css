@@ -818,8 +818,8 @@
 
 @-webkit-keyframes bounce-t {
     0% {
-        -webkit-transform: translateY(-1vw);
-        transform: translateY(-1vw);
+        -webkit-transform: translateY(-0.8vw);
+        transform: translateY(-0.8vw);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
         opacity: 1;
@@ -830,29 +830,29 @@
     }
 
     40% {
-        -webkit-transform: translateY(-2vw);
-        transform: translateY(-2vw);
+        -webkit-transform: translateY(-1.8vw);
+        transform: translateY(-1.8vw);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
 
     65% {
-        -webkit-transform: translateY(-1vw);
-        transform: translateY(-1vw);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    82% {
         -webkit-transform: translateY(-0.8vw);
         transform: translateY(-0.8vw);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
 
-    93% {
+    82% {
         -webkit-transform: translateY(-0.6vw);
         transform: translateY(-0.6vw);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    93% {
+        -webkit-transform: translateY(-0.5vw);
+        transform: translateY(-0.5vw);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
@@ -878,8 +878,8 @@
 
 @keyframes bounce-t {
     0% {
-        -webkit-transform: translateY(-1vw);
-        transform: translateY(-1vw);
+        -webkit-transform: translateY(-0.8vw);
+        transform: translateY(-0.8vw);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
         opacity: 1;
@@ -890,29 +890,29 @@
     }
 
     40% {
-        -webkit-transform: translateY(-2vw);
-        transform: translateY(-2vw);
+        -webkit-transform: translateY(-1.8vw);
+        transform: translateY(-1.8vw);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
 
     65% {
-        -webkit-transform: translateY(-1vw);
-        transform: translateY(-1vw);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    82% {
         -webkit-transform: translateY(-0.8vw);
         transform: translateY(-0.8vw);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
 
-    93% {
+    82% {
         -webkit-transform: translateY(-0.6vw);
         transform: translateY(-0.6vw);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    93% {
+        -webkit-transform: translateY(-0.5vw);
+        transform: translateY(-0.5vw);
         -webkit-animation-timing-function: ease-in;
         animation-timing-function: ease-in;
     }
@@ -1305,3 +1305,10 @@
         opacity: 1;
     }
 }
+
+/* ----------------------------------------------
+ * Select CSS animations generated via Animista.net
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */

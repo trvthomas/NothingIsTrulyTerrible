@@ -77,7 +77,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "Credits",
-        description: "•| Concepts and philosophy: Based on Part 1 of \"Nada es tan terrible\" by Rafael Santandreu. \n•| Background and texture images: Photography sourced via Unsplash.com and Pexels.com. \n•| Custom artwork and adaptations: Designed, vectorized, and modified by Thomas Rodriguez (@trvthomas) \n•| Vectors and assets: Sourced from Magnific.com, designed by: rawpixel.com, vectorpouch, macrovector, brgfx, Freepik, starline, juicy_fish, pch.vector, vector4stock, djvstock, kjpargeter, muhammad.abdullah, vectorjuice, callmetak.",
+        description: "•| Concepts and philosophy: Based on Part 1 of \"Nada es tan terrible\" by Rafael Santandreu. \n•| Background and texture images: Photography sourced via Unsplash.com and Pexels.com. \n•| Custom artwork and adaptations: Designed, vectorized, and modified by Thomas Rodriguez (@trvthomas) \n•| Vectors and assets: Sourced from Magnific.com, designed by: rawpixel.com, vectorpouch, macrovector, brgfx, Freepik, starline, juicy_fish, pch.vector, vector4stock, djvstock, kjpargeter, muhammad.abdullah, vectorjuice, callmetak.\n•| Development and libraries: Parallax motion built using Parallax.js. Custom animations handcrafted by Thomas Rodriguez (@trvthomas), with select effects generated and adapted from Animista.net by Ana Travas",
         hasAudio: false,
         elements: [],
         buttons: [

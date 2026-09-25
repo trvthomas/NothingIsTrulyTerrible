@@ -67,6 +67,25 @@ html {
     margin-top: 0;
 }
 
+/* Share page */
+.share-div {
+    text-align: center;
+    padding: 1.8rem 1rem;
+    margin: 0.6rem;
+    width: 90%;
+}
+
+.share-div div {
+    background-color: #F0F2EF;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+.share-div img {
+    margin-bottom: 0.5rem;
+    width: 90%;
+}
+
 /* Hide mobile */
 .mobile-not-compatible {
     display: block;
@@ -85,12 +104,14 @@ html {
     padding: 1rem;
 }
 
-.mobile-not-compatible i {
+.mobile-not-compatible i,
+.icon-share {
     font-size: 6rem;
     color: #42783B;
 }
 
-.mobile-not-compatible h1 {
+.mobile-not-compatible h1,
+.share-div h1 {
     margin-top: 15px;
     margin-bottom: 5px;
     font-size: 4rem;
@@ -102,7 +123,8 @@ html {
     text-shadow: 0 0 1rem rgba(25, 25, 26, 0.3);
 }
 
-.mobile-not-compatible p {
+.mobile-not-compatible p,
+.share-div p {
     margin-top: 0;
     font-size: 2rem;
     line-height: 0.95;
@@ -122,6 +144,14 @@ html {
 
     .main-wrapper-scene {
         display: block;
+    }
+
+    .share-div {
+        width: 50%;
+    }
+
+    .share-div img {
+        width: 40%;
     }
 }
 
