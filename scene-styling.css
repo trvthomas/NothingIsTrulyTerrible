@@ -84,7 +84,7 @@ body,
 
 .layer-content h1 {
     margin-bottom: 2px;
-    font-size: clamp(none, 6vh, 3.5vw);
+    font-size: clamp(none, 6vh, 3.3vw);
     line-height: 1.1;
     font-family: "Solway", serif;
     font-weight: 800;
@@ -95,7 +95,7 @@ body,
 
 .layer-content p {
     margin-top: 0;
-    font-size: clamp(none, 3.8vh, 2.5vw);
+    font-size: clamp(none, 3.8vh, 2.3vw);
     line-height: 1.1;
     color: #F2F2F2;
     text-shadow: 0 0 2vw rgba(25, 25, 26, 0.6);
@@ -121,7 +121,7 @@ body,
 }
 
 .buttons-container button {
-    font-size: clamp(none, 3vh, 2.2vw);
+    font-size: clamp(none, 3vh, 2.1vw);
     background: var(--scene-light-color);
     background: linear-gradient(162deg, var(--scene-light-color), color-mix(in srgb, var(--scene-light-color), var(--scene-dark-color) 35%));
     box-shadow: 0 0 1.8vw rgba(25, 25, 26, 0.6);

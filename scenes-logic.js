@@ -166,7 +166,7 @@ function buildScene(scene) {
     parallaxSceneDiv = document.getElementById('main-scene');
     parallaxInstance = new Parallax(parallaxSceneDiv, parallaxOptions);
 
-    document.title = scene.title + " | Nothing is Truly Terrible";
+    document.title = scene.title + " | Nothing Is Truly Terrible";
 }
 
 function preloadAssets(scene) {

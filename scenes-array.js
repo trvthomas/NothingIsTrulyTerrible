@@ -32,7 +32,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "Behind the Experience",
-        description: "I'm Thomas, a Robotics Engineering student at University of California, Riverside with a longtime passion for graphic design and web development (two worlds that don't always overlap, but really should). Alongside my studies in hardware and software, I've been building websites and designing visuals for over 10 years.\n In 2025, my mom introduced me to Rafael Santandreu's books. Once I started reading, I realized that his ideas on renunciation, mental freedom, and finding joy anywhere hit differently when you actually put them into practice. But when I tried recommending \"Nada es tan terrible\" to friends here in the U.S., I hit a wall: there is no English translation.\nSo I made one! Not a word-for-word book translation, but a visual one; a way to experience Santandreu's ideas without needing to know Spanish. This project is my answer to that gap, and a chance to bring graphic design, UI, and web development together in one place. I hope you enjoy the experience as much as I enjoyed building it :). Remember to follow me on IG, GitHub, and LinkedIn as @trvthomas!",
+        description: "I'm Thomas, a Robotics Engineering student at UC Riverside with a longtime passion for graphic design and web development. Alongside my studies in hardware and software, I've been building websites and designing visuals for over 10 years.\n In 2025, my mom introduced me to Rafael Santandreu's books. His ideas on renunciation, mental freedom, and finding joy anywhere hit differently once put into practice. But when I tried recommending \"Nada es tan terrible\" to my friends, I hit a wall: there is no English translation.\nSo I made one! Not a text translation, but a visual adaptation; an interactive way to experience Santandreu's core philosophy without needing to know Spanish. This project bridges that gap, while bringing my design, UI, and web development skills together in one place. I hope you enjoy the experience as much as I enjoyed building it. :)",
         hasAudio: false,
         elements: [
             { asset: "scene-AB-profile-pic.webp", top: 60, left: 84, width: 14, depth: 0.1, animation: "blink-subtle", animationDuration: 2 },
@@ -99,7 +99,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "Credits",
-        description: "•| Concepts and philosophy: Based on Part 1 of \"Nada es tan terrible\" by Rafael Santandreu. \n•| Background and texture images: Photography sourced via Unsplash.com and Pexels.com. \n•| Custom artwork and adaptations: Designed, vectorized, and modified by Thomas Rodriguez (@trvthomas) \n•| Vectors and assets: Sourced from Magnific.com, designed by: rawpixel.com, vectorpouch, macrovector, brgfx, Freepik, starline, juicy_fish, pch.vector, vector4stock, djvstock, kjpargeter, muhammad.abdullah, vectorjuice, callmetak, alicia_mb.\n•| Development and libraries: Parallax motion built using Parallax.js. Custom animations handcrafted by Thomas Rodriguez (@trvthomas), with select effects generated and adapted from Animista.net by Ana Travas",
+        description: "•| Concepts and philosophy: Based on Part 1 of \"Nada es tan terrible\" by Rafael Santandreu. \n•| Background and texture images: Photography sourced via Unsplash.com and Pexels.com. \n•| Custom artwork and adaptations: Designed, vectorized, and modified by Thomas Rodriguez (@trvthomas) \n•| Vectors and assets: Sourced from Magnific.com, designed by: rawpixel.com, vectorpouch, macrovector, brgfx, Freepik, starline, juicy_fish, pch.vector, vector4stock, djvstock, kjpargeter, muhammad.abdullah, vectorjuice, callmetak, alicia_mb.\n•| Development and libraries: Parallax motion built using Parallax.js. Custom animations handcrafted by Thomas Rodriguez (@trvthomas), with select effects generated and adapted from Animista.net by Ana Travas.",
         hasAudio: false,
         elements: [],
         buttons: [
@@ -147,7 +147,7 @@ const scenes = [
         textLayout: "left",
         gradientWH: 0,
         title: "Is the cage holding the monkey?",
-        description: "Or is the monkey holding the cage? Hunters build cages for the banana. This way, the monkeys get trapped by themselves trying to reach out the fruit. Since the animal won't let go off the banana, the hunters can easily catch them.",
+        description: "Or is the monkey holding the cage? Hunters leave bananas inside a narrow trap. The monkey slips its hand in to grab the fruit, but with a clenched fist, it can't pull it back out. Because it refuses to let go of the bait, it traps itself!",
         hasAudio: false,
         elements: [
             { asset: "scene-3ab-banana.webp", top: 37, left: 51, width: 11, depth: 0.1, animation: "shake-m", animationDuration: 1.4 },
@@ -169,11 +169,11 @@ const scenes = [
         textLayout: "left",
         gradientWH: 48,
         title: "The bait isn't worth the bars",
-        description: "Every time we refuse to let go of something, like a broken relationship, constant perfection, or the need of approval, we trap ourselves in a mental cage that produces nothing but fears and anxiety.",
+        description: "Every time we refuse to let go of something, like a broken relationship, constant perfection, or the need of approval, we trap ourselves in a mental cage that produces nothing but fear and anxiety.",
         hasAudio: false,
         elements: [
-            { asset: "scene-3ab-banana.webp", top: 37, left: 51, width: 11, depth: 0.1, animation: "shake-m", animationDuration: 1.4 },
-            { asset: "scene-3ab-banana.webp", top: 40, left: 56, width: 10, depth: 0.1, animation: "shake-m", animationDuration: 1.6 },
+            { asset: "scene-3ab-banana.webp", top: 37, left: 51, width: 11, depth: 0.1, animation: "shake-m", animationDuration: 1.6 },
+            { asset: "scene-3ab-banana.webp", top: 40, left: 56, width: 10, depth: 0.1, animation: "shake-m", animationDuration: 1.8 },
             { asset: "scene-3ab-cage.webp", top: 25, left: 47, width: 30, depth: 0.2 },
             { asset: "scene-3ab-net.webp", top: 30, left: 76, width: 30, depth: 0.25, animation: "wobble-y", animationDuration: 3 },
             { asset: "scene-3b-monkey.webp", top: 30, left: 38, width: 35, depth: 0.25, animation: "move-x", animationDuration: 3 }
@@ -191,7 +191,7 @@ const scenes = [
         textLayout: "right",
         gradientWH: 0,
         title: "Searching in the wrong place",
-        description: "Happiness isn't missing. You're just looking for it at the wrong place. Giving up isn't a loss, it's the realization that you never needed those things to be happy.",
+        description: "Happiness isn't missing; you're just looking for it at the wrong place. Letting go isn't a loss, it's the realization that you never needed those things to be happy in the first place.",
         hasAudio: false,
         elements: [
             { asset: "scene-4a-glow.webp", top: 16, left: 30, width: 40, depth: 0.06, animation: "heart-beat", animationDuration: 6 },
@@ -226,7 +226,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 45,
         title: "Make room for something new",
-        description: "In every situation, there's a new opportunity waiting to be seen. Renunciation clears the canvas, and creation fills it back with new challenges and meanings.",
+        description: "In every situation, a fresh opportunity is waiting to be seen. Renunciation clears the canvas, and creation fills it back with new challenges and meanings.",
         hasAudio: false,
         elements: [
             { asset: "scene-4c-frame-erasing.webp", top: 40, left: 12, width: 25, depth: 0.1, animation: "shake-m", animationDuration: 15 },
@@ -246,9 +246,9 @@ const scenes = [
         lightColor: "#FFE6FF",
         immersiveColor: "#10467A",
         textLayout: "center",
-        gradientWH: 54,
+        gradientWH: 56,
         title: "Life is a garden!",
-        description: "It's packed with beautiful fruits. Nobody needs to own the garden to enjoy it. Just learn to notice what's already growing!",
+        description: "It's overflowing with abundance. You don't need to own the garden to enjoy its fruit, you just have to notice what's already growing.",
         hasAudio: false,
         elements: [
             // Big
@@ -282,7 +282,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 48,
         title: "Ownership is overrated",
-        description: "Having more stuff doesn't make life better. Wealth is the ability to enjoy what we already possess.",
+        description: "Having more stuff doesn't make life richer. True wealth is the ability to enjoy what's already around us.",
         hasAudio: false,
         elements: [
             { asset: "scene-5b-spiral.webp", top: 38, left: 10, width: 34, depth: 0.1 },
@@ -484,7 +484,7 @@ const scenes = [
         textLayout: "left",
         gradientWH: 54,
         title: "What if nothing is truly terrible?",
-        description: "Actually... nothing is. When you drop the heavy grip of expectations, you see that ordinary moments were never your enemy. Renunciation empties your hands so you can finally enjoy what's in front of you; now you get to decide what you actually care to hold.",
+        description: "Actually... nothing is! When you drop the heavy grip of expectations, you see that ordinary moments were never your enemy. Renunciation empties your hands so you can finally enjoy what's in front of you; now you get to decide what you actually care to hold.",
         hasAudio: false,
         elements: [
             { asset: "scene-8-b3.webp", top: 35, left: 25, width: 78, depth: 0.2, animation: "move-x", animationDuration: 3 },
@@ -496,7 +496,7 @@ const scenes = [
             { asset: "scene-8-balloon2.webp", top: 12, left: 82, width: 8, depth: 0.26, animation: "vibrate", animationDuration: 2 },
         ],
         buttons: [
-            { text: "Back to beginning", icon: "house", toScene: "1" },
+            { text: "Start again", icon: "house", toScene: "1" },
             { text: "Share", icon: "share-nodes", toLink: "share.html" },
             { text: "About the books", icon: "arrow-up-right-from-square", toLink: "https://www.amazon.com/stores/Rafael-Santandreu/author/B00J2GNY9M" }
         ]
