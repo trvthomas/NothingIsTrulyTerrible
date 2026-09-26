@@ -52,13 +52,13 @@
             if (navigator.share) {
                 try {
                     await navigator.share({
-                        text: "What if nothing is truly terrible? A quick visual reminder to drop the weight: https://trvthomas.github.io/NothingIsTrulyTerrible"
+                        text: "What if nothing is truly terrible? Check out this quick visual reminder to drop the weight: https://trvthomas.github.io/NothingIsTrulyTerrible"
                     });
                 } catch (err) {
                     return;
                 }
             } else {
-                navigator.clipboard.writeText("https://trvthomas.github.io/NothingIsTrulyTerrible");
+                navigator.clipboard.writeText("What if nothing is truly terrible? Check out this quick visual reminder to drop the weight: https://trvthomas.github.io/NothingIsTrulyTerrible");
                 alert("Link copied to clipboard!");
             }
         }

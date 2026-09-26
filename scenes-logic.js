@@ -1,12 +1,15 @@
+const total_scenes = scenes.filter(s => s.order).length;
+
 function goToScene(sceneId) {
     const scene = scenes.find(scene => scene.id === sceneId);
 
     openLoader();
     buildScene(scene);
+    updateProgress(sceneId);
     preloadAssets(scene).then(() => {
         //startAudioEffects(scene);
         closeLoader();
-        localStorage.setItem("last-scene", scene.id)
+        localStorage.setItem("last-scene", scene.id);
     });
 }
 
@@ -144,6 +147,17 @@ function buildScene(scene) {
 
     parallaxScene.appendChild(frameLayer);
 
+    // Progress Bar
+    const progressLayer = document.createElement('div');
+    progressLayer.id = 'progress-bar';
+    progressLayer.className = 'layer-progress';
+    progressLayer.dataset.depth = 0;
+
+    const progressDiv = document.createElement('div');
+    progressLayer.appendChild(progressDiv);
+
+    parallaxScene.appendChild(progressLayer);
+
     // Reinitialize Parallax
     if (parallaxInstance) {
         parallaxInstance.destroy();
@@ -170,4 +184,12 @@ function preloadAssets(scene) {
             img.src = src;
         });
     }));
+}
+
+function updateProgress(sceneId) {
+    const positionScene = scenes.find(s => s.id === sceneId);
+    if (!positionScene || !positionScene.order) return;
+    
+    const progress = (positionScene.order / total_scenes) * 100;
+    document.getElementById('progress-bar').style.width = `${progress}%`;
 }

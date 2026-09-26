@@ -43,7 +43,7 @@ body,
     height: 100%;
 }
 
-/* Text Layers */
+/* Text layers configurations */
 .text-layer.left .layer-content {
     position: absolute;
     top: 15%;
@@ -101,6 +101,7 @@ body,
     text-shadow: 0 0 2vw rgba(25, 25, 26, 0.6);
 }
 
+/* Buttons */
 .buttons-container {
     margin-top: .5rem;
     align-items: center;
@@ -201,6 +202,21 @@ body,
     height: 40%;
     background: var(--scene-dark-color);
     background: radial-gradient(ellipse, var(--scene-dark-color) 0%, var(--scene-dark-color) 30%, transparent 70%, transparent 100%);
+}
+
+/* Progress bar */
+.layer-progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.2vh;
+}
+
+.layer-progress div{
+    height: 100%;
+    background: var(--scene-light-color);
+    background: linear-gradient(90deg,var(--scene-immersive-color) 0%, var(--scene-light-color) 100%);
+    border-radius: 0 1rem 1rem 0;
 }
 
 @media (max-width: 767px) {

@@ -152,7 +152,7 @@ html {
 .mobile-not-compatible i,
 .icon-share {
     font-size: 6rem;
-    color: #42783B;
+    color: var(--scene-dark-color);
 }
 
 .mobile-not-compatible h1,
@@ -164,7 +164,7 @@ html {
     font-family: "Solway", serif;
     font-weight: 800;
     font-style: normal;
-    color: #42783B;
+    color: var(--scene-dark-color);
     text-shadow: 0 0 1rem rgba(25, 25, 26, 0.3);
 }
 

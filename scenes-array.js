@@ -1,6 +1,7 @@
 const scenes = [
     {
         id: "1",
+        order: 1,
         darkColor: "#410B0B",
         lightColor: "#F1DFDA",
         immersiveColor: "#1D1E20",
@@ -107,6 +108,7 @@ const scenes = [
     },
     {
         id: "2",
+        order: 2,
         darkColor: "#123454",
         lightColor: "#D5E6F6",
         immersiveColor: "#283B44",
@@ -138,6 +140,7 @@ const scenes = [
     },
     {
         id: "3a",
+        order: 3,
         darkColor: "#2D4323",
         lightColor: "#E3EDDE",
         immersiveColor: "#001F18",
@@ -159,6 +162,7 @@ const scenes = [
     },
     {
         id: "3b",
+        order: 4,
         darkColor: "#5D651A",
         lightColor: "#F2F5D6",
         immersiveColor: "#002E22",
@@ -180,6 +184,7 @@ const scenes = [
     },
     {
         id: "4a",
+        order: 5,
         darkColor: "#7B561E",
         lightColor: "#F5E9D6",
         immersiveColor: "#CACBD0",
@@ -214,6 +219,7 @@ const scenes = [
     },
     {
         id: "4c",
+        order: 6,
         darkColor: "#760B0A",
         lightColor: "#FBD1D0",
         immersiveColor: "#D3BC9D",
@@ -235,13 +241,14 @@ const scenes = [
     },
     {
         id: "5a",
+        order: 7,
         darkColor: "#660066",
         lightColor: "#FFE6FF",
         immersiveColor: "#10467A",
         textLayout: "center",
         gradientWH: 54,
         title: "Life is a garden!",
-        description: "It's packed with a beautiful fruits. Nobody needs to own the garden to enjoy it. Just learn to notice what's already growing!",
+        description: "It's packed with beautiful fruits. Nobody needs to own the garden to enjoy it. Just learn to notice what's already growing!",
         hasAudio: false,
         elements: [
             // Big
@@ -268,6 +275,7 @@ const scenes = [
     },
     {
         id: "5b",
+        order: 8,
         darkColor: "#806000",
         lightColor: "#FFF9E6",
         immersiveColor: "#BC892A",
@@ -294,6 +302,7 @@ const scenes = [
     },
     {
         id: "6a",
+        order: 9,
         darkColor: "#394360",
         lightColor: "#DFE2EC",
         immersiveColor: "#237DA2",
@@ -316,6 +325,7 @@ const scenes = [
     },
     {
         id: "6b",
+        order: 10,
         darkColor: "#0C0D12",
         lightColor: "#E0E2EB",
         immersiveColor: "#0C0D12",
@@ -327,7 +337,7 @@ const scenes = [
         elements: [
             { asset: "scene-6b-droplet3.webp", top: 28, left: 4, width: 30, depth: 0.2, animation: "flicker-subtle", animationDuration: 7 },
             { asset: "scene-6b-droplet2.webp", top: 22, left: 31, width: 36, depth: 0.2, animation: "flicker-subtle", animationDuration: 2 },
-            { asset: "scene-6b-droplet4.webp", top: 53, left: 2, width: 35, depth: 0.2, animation: "flicker-subtle", animationDuration: 2 },
+            { asset: "scene-6b-droplet4.webp", top: 53, left: 2, width: 35, depth: 0.2, animation: "flicker-subtle", animationDuration: 2.2 },
             { asset: "scene-6b-droplet1.webp", top: 55, left: 32, width: 38, depth: 0.2, animation: "flicker-subtle", animationDuration: 5},
             { asset: "scene-6b-glass.webp", top: 32, left: 28, width: 14, depth: 0.6 },
             { asset: "scene-6b-hand.webp", top: 43, left: 32, width: 38, depth: 0.8, animation: "shake-m", animationDuration: 1.4 }
@@ -338,9 +348,10 @@ const scenes = [
     },
     {
         id: "6c",
+        order: 11,
         darkColor: "#333333",
         lightColor: "#E6E6E6",
-        immersiveColor: "##D7DFE0",
+        immersiveColor: "#D7DFE0",
         textLayout: "right",
         gradientWH: 55,
         title: "Suddenly, the ache stops",
@@ -360,6 +371,7 @@ const scenes = [
     },
     {
         id: "7a",
+        order: 12,
         darkColor: "#541218",
         lightColor: "#F6D5D8",
         immersiveColor: "#970001",
@@ -396,6 +408,7 @@ const scenes = [
     },
     {
         id: "7b",
+        order: 13,
         darkColor: "#49306B",
         lightColor: "#E4DCEF",
         immersiveColor: "#8F6A42",
@@ -422,6 +435,7 @@ const scenes = [
     },
     {
         id: "7c",
+        order: 14,
         darkColor: "#A23311",
         lightColor: "#FADAD1",
         immersiveColor: "#FFE699",
@@ -463,6 +477,7 @@ const scenes = [
     },
     {
         id: "8",
+        order: 15,
         darkColor: "#314706",
         lightColor: "#EDFBD0",
         immersiveColor: "#1D1E20",
@@ -482,11 +497,8 @@ const scenes = [
         ],
         buttons: [
             { text: "Back to beginning", icon: "house", toScene: "1" },
-            { text: "Share experience", icon: "share-nodes", toLink: "/share.html" },
-            { text: "About the books", icon: "arrow-up-right-from-square", toLink: "https://www.amazon.com/stores/Rafael-Santandreu/author/B00J2GNY9M" },
-            { text: "Leave feedback", icon: "comment-dots", toLink: "https://www.trvsolutions.com" }
+            { text: "Share", icon: "share-nodes", toLink: "share.html" },
+            { text: "About the books", icon: "arrow-up-right-from-square", toLink: "https://www.amazon.com/stores/Rafael-Santandreu/author/B00J2GNY9M" }
         ]
     },
 ]
-
-//Idea: add in the buttons a new: animation property, eg. shake/vibrate, flicker, 
