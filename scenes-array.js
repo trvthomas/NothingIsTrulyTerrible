@@ -18,8 +18,29 @@ const scenes = [
         ],
         buttons: [
             { text: "Step Inside", icon: "chevron-right", toScene: "2" },
+            { text: "About me", icon: "hand-peace", toScene: "AB" },
             { text: "AI Usage", icon: "robot", toScene: "AI1" },
             { text: "Credits", icon: "align-left", toScene: "CR1" }
+        ]
+    },
+    {
+        id: "AB",
+        darkColor: "#005580",
+        lightColor: "#CCEEFF",
+        immersiveColor: "#085D91",
+        textLayout: "top",
+        gradientWH: 0,
+        title: "Behind the Experience",
+        description: "I'm Thomas, a Robotics Engineering student at University of California, Riverside with a longtime passion for graphic design and web development (two worlds that don't always overlap, but really should). Alongside my studies in hardware and software, I've been building websites and designing visuals for over 10 years.\n In 2025, my mom introduced me to Rafael Santandreu's books. Once I started reading, I realized that his ideas on renunciation, mental freedom, and finding joy anywhere hit differently when you actually put them into practice. But when I tried recommending \"Nada es tan terrible\" to friends here in the U.S., I hit a wall: there is no English translation.\nSo I made one! Not a word-for-word book translation, but a visual one; a way to experience Santandreu's ideas without needing to know Spanish. This project is my answer to that gap, and a chance to bring graphic design, UI, and web development together in one place. I hope you enjoy the experience as much as I enjoyed building it :). Remember to follow me on IG, GitHub, and LinkedIn as @trvthomas!",
+        hasAudio: false,
+        elements: [
+            { asset: "scene-AB-profile-pic.webp", top: 60, left: 84, width: 14, depth: 0.1, animation: "blink-subtle", animationDuration: 2 },
+        ],
+        buttons: [
+            { text: "Home", icon: "house", toScene: "1" },
+            { text: "Instagram", icon: "arrow-up-right-from-square", toLink: "https://www.instagram.com/trvthomas" },
+            { text: "LinkedIn", icon: "arrow-up-right-from-square", toLink: "https://www.linkedin.com/in/trvthomas" },
+            { text: "GitHub", icon: "arrow-up-right-from-square", toLink: "https://www.github.com/trvthomas" }
         ]
     },
     {
@@ -77,7 +98,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "Credits",
-        description: "•| Concepts and philosophy: Based on Part 1 of \"Nada es tan terrible\" by Rafael Santandreu. \n•| Background and texture images: Photography sourced via Unsplash.com and Pexels.com. \n•| Custom artwork and adaptations: Designed, vectorized, and modified by Thomas Rodriguez (@trvthomas) \n•| Vectors and assets: Sourced from Magnific.com, designed by: rawpixel.com, vectorpouch, macrovector, brgfx, Freepik, starline, juicy_fish, pch.vector, vector4stock, djvstock, kjpargeter, muhammad.abdullah, vectorjuice, callmetak.\n•| Development and libraries: Parallax motion built using Parallax.js. Custom animations handcrafted by Thomas Rodriguez (@trvthomas), with select effects generated and adapted from Animista.net by Ana Travas",
+        description: "•| Concepts and philosophy: Based on Part 1 of \"Nada es tan terrible\" by Rafael Santandreu. \n•| Background and texture images: Photography sourced via Unsplash.com and Pexels.com. \n•| Custom artwork and adaptations: Designed, vectorized, and modified by Thomas Rodriguez (@trvthomas) \n•| Vectors and assets: Sourced from Magnific.com, designed by: rawpixel.com, vectorpouch, macrovector, brgfx, Freepik, starline, juicy_fish, pch.vector, vector4stock, djvstock, kjpargeter, muhammad.abdullah, vectorjuice, callmetak, alicia_mb.\n•| Development and libraries: Parallax motion built using Parallax.js. Custom animations handcrafted by Thomas Rodriguez (@trvthomas), with select effects generated and adapted from Animista.net by Ana Travas",
         hasAudio: false,
         elements: [],
         buttons: [
@@ -96,9 +117,9 @@ const scenes = [
         hasAudio: false,
         elements: [
             // Items
-            { asset: "scene-2-item1.webp", top: 24, left: 12, width: 12, depth: 0.36 },
+            { asset: "scene-2-item1.webp", top: 24, left: 12, width: 12, depth: 0.36, animation: "heart-beat-subtle", animationDuration: 4.8 },
             { asset: "scene-2-item4.webp", top: 18, left: 49, width: 10, depth: 0.36, animation: "shake-m", animationDuration: 1.4 },
-            { asset: "scene-2-item3.webp", top: 23, left: 80, width: 8, depth: 0.36, animation: "shake-m", animationDuration: 0.8 },
+            { asset: "scene-2-item3.webp", top: 23, left: 80, width: 8, depth: 0.36, animation: "heart-beat-subtle", animationDuration: 4 },
             { asset: "scene-2-item2.webp", top: 69, left: 13, width: 11, depth: 0.36, animation: "shake-m", animationDuration: 1.8 },
             { asset: "scene-2-item5.webp", top: 77, left: 49, width: 9, depth: 0.36, animation: "shake-m", animationDuration: 1.4 },
             { asset: "scene-2-item6.webp", top: 71, left: 82, width: 11, depth: 0.36, animation: "shake-m", animationDuration: 0.8 },
@@ -162,14 +183,30 @@ const scenes = [
         darkColor: "#7B561E",
         lightColor: "#F5E9D6",
         immersiveColor: "#CACBD0",
-        textLayout: "top",
-        gradientWH: 45,
+        textLayout: "right",
+        gradientWH: 0,
         title: "Searching in the wrong place",
         description: "Happiness isn't missing. You're just looking for it at the wrong place. Giving up isn't a loss, it's the realization that you never needed those things to be happy.",
         hasAudio: false,
         elements: [
-            { asset: "scene-4a-mountains.webp", top: 10, left: -20, width: 140, depth: 0.18 },
-            { asset: "scene-4a-silhouette.webp", top: 60, left: 44, width: 8, depth: 0.3 },
+            { asset: "scene-4a-glow.webp", top: 16, left: 30, width: 40, depth: 0.06, animation: "heart-beat", animationDuration: 6 },
+            { asset: "scene-4a-arrow1.webp", top: 70, left: 19, width: 5, depth: 0.14 },
+            { asset: "scene-4a-arrow2.webp", top: 30, left: 15, width: 5, depth: 0.16, animation: "rotate-half", animationDuration: 2, animationReverse: true },
+            { asset: "scene-4a-arrow3.webp", top: 70, left: 54, width: 8, depth: 0.2, animation: "shake-m", animationDuration: 1.6 },
+            { asset: "scene-4a-arrow4.webp", top: 28, left: 28, width: 8, depth: 0.1 },
+            { asset: "scene-4a-arrow5.webp", top: 10, left: 29, width: 8, depth: 0.2, animation: "move-diagonal-2", animationDuration: 3 },
+
+            { asset: "scene-4a-footprints1.webp", top: 72, left: 25, width: 3.2, depth: 0.12 },
+            { asset: "scene-4a-footprints1.webp", top: 80, left: 28, width: 2.2, depth: 0.16 },
+            { asset: "scene-4a-footprints2.webp", top: 16, left: 46, width: 3.2, depth: 0.14, animation: "move-y", animationDuration: 4, animationReverse: true },
+            { asset: "scene-4a-footprints2.webp", top: 11, left: 45, width: 2.2, depth: 0.12, animation: "move-y", animationDuration: 4.2, animationReverse: true },
+            { asset: "scene-4a-footprints3.webp", top: 70, left: 71.5, width: 4, depth: 0.12, animation: "move-diagonal-2", animationDuration: 3, animationReverse: true },
+            { asset: "scene-4a-footprints3.webp", top: 64, left: 74, width: 3, depth: 0.16, animation: "move-diagonal-2", animationDuration: 3.2, animationReverse: true },
+            { asset: "scene-4a-footprints4.webp", top: 11, left: 52, width: 3.2, depth: 0.14, animation: "wobble-x", animationDuration: 3 },
+            { asset: "scene-4a-footprints1.webp", top: 50, left: 11, width: 2.2, depth: 0.16, animation: "vibrate", animationDuration: 1.8 },
+            { asset: "scene-4a-footprints1.webp", top: 56, left: 11.5, width: 1.2, depth: 0.14, animation: "vibrate", animationDuration: 2, animationReverse: true },
+            { asset: "scene-4a-footprints4.webp", top: 83, left: 40, width: 3.2, depth: 0.14, animation: "vibrate", animationDuration: 1.8 },
+            { asset: "scene-4a-footprints4.webp", top: 85.5, left: 44, width: 2.2, depth: 0.12, animation: "vibrate", animationDuration: 2, animationReverse: true },
         ],
         buttons: [
             { text: "Clear the way", toScene: "4c" }
@@ -268,7 +305,7 @@ const scenes = [
         elements: [
             { asset: "scene-6a-droplet1.webp", top: 18, left: 12, width: 10, depth: 0.6, animation: "jello-1", animationDuration: 2 },
             { asset: "scene-6a-droplet2.webp", top: 20, left: 44, width: 12, depth: 0.5, animation: "jello-1", animationDuration: 2.4 },
-            { asset: "scene-6a-droplet3.webp", top: 42, left: 15, width: 12, depth: 0.5, animation: "jello-2", animationDuration: 2.4 },
+            { asset: "scene-6a-droplet3.webp", top: 42, left: 15, width: 12, depth: 0.5, animation: "jello-2", animationDuration: 2.3 },
             { asset: "scene-6a-droplet4.webp", top: 68, left: 13, width: 10, depth: 0.6, animation: "jello-2", animationDuration: 2.2 },
             { asset: "scene-6a-glass.webp", top: 32, left: 28, width: 14, depth: 0.2, animation: "rotate-half-inverse", animationDuration: 6 },
             { asset: "scene-6a-hand.webp", top: 43, left: 32, width: 38, depth: 0.4 }

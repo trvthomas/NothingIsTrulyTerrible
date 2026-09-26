@@ -20,6 +20,55 @@ html {
     justify-content: center;
 }
 
+/* Sensory Warning Overlay */
+.sensory-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(246, 248, 236, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 999;
+    text-align: center;
+}
+
+.sensory-overlay .sensory-box {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.8rem 1rem;
+    background-color: var(--scene-light-color);
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1.5rem rgba(25, 25, 26, 0.3);
+}
+
+.sensory-overlay .sensory-icon i {
+    color: var(--scene-dark-color);
+    font-size: clamp(none, 20vh, 10vw);
+}
+
+.sensory-overlay .sensory-box h1 {
+    color: var(--scene-dark-color);
+    font-size: 2.8rem;
+    line-height: 0.9;
+    margin: 5px auto;
+    font-family: "Solway", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.sensory-overlay .sensory-box p {
+    font-size: 1.4rem;
+    line-height: 0.95;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
 /* Loader */
 .loader-overlay {
     display: block;
@@ -40,7 +89,7 @@ html {
     animation: fade-in 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
-.loader-overlay.fade-out {
+.loader-overlay.fade-out, .sensory-overlay.fade-out {
     -webkit-animation: fade-out 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
     animation: fade-out 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
@@ -52,12 +101,7 @@ html {
     transform: translate(-50%, -50%);
 }
 
-.loader-overlay .loader-image {
-    width: 60%;
-    margin: auto;
-}
-
-.loader-overlay .loader-image i {
+.loader-overlay .loader-icon i {
     color: var(--scene-light-color);
     font-size: clamp(none, 25vh, 15vw);
 }
@@ -75,10 +119,11 @@ html {
     width: 90%;
 }
 
-.share-div div {
+.share-div div:not(.buttons-container) {
     background-color: #F0F2EF;
     border-radius: 1.5rem;
     padding: 1rem;
+    box-shadow: 0 0 1.5rem rgba(25, 25, 26, 0.3);
 }
 
 .share-div img {
@@ -114,7 +159,7 @@ html {
 .share-div h1 {
     margin-top: 15px;
     margin-bottom: 5px;
-    font-size: 4rem;
+    font-size: 2.8rem;
     line-height: 0.9;
     font-family: "Solway", serif;
     font-weight: 800;
@@ -126,7 +171,8 @@ html {
 .mobile-not-compatible p,
 .share-div p {
     margin-top: 0;
-    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
     line-height: 0.95;
     color: #19191A;
 }

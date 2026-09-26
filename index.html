@@ -7,7 +7,7 @@
     <meta name="keywords" content="Thomas Rodriguez Venegas">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
 
     <link rel="stylesheet" href="./general-styling.css">
     <link rel="stylesheet" href="./scene-styling.css">
@@ -28,12 +28,13 @@
 
 <body>
     <div class="mobile-not-compatible">
-        <img src="./assets/words-title.png" alt="Title: Nothing Is Truly Terrible" />
+        <img src="./assets/words-title.webp" alt="Title: Nothing Is Truly Terrible" />
 
         <div>
             <i class="fa-solid fa-mobile-screen-button fa-rotate-by" style="--fa-rotate-angle: -45deg;"></i>
             <h1>Rotate your device</h1>
-            <p>To experience the story the way it was built, please rotate your screen to landscape mode or visit from a tablet or computer.</p>
+            <p>To experience the story the way it was built, please rotate your screen to landscape mode or visit from a
+                tablet or computer.</p>
         </div>
     </div>
 
@@ -41,11 +42,27 @@
         <div id="main-scene"></div>
     </div>
 
+    <div class="sensory-overlay" id="sensory">
+        <div class="sensory-box">
+            <figure class="sensory-icon">
+                <i class="fa-solid fa-eye"></i>
+            </figure>
+            <h1>Motion and Visual Warning</h1>
+            <p>This experience features continuous motion, layered animations, moving elements, and shifting colors.
+                Please proceed only if you feel comfortable.</p>
+
+            <div class="buttons-container" style="justify-content: center;">
+                <button onclick="enterExperience()"><span>Enter experience</span> <span class="button-icon"><i
+                            class="fa-solid fa-arrow-right-to-bracket"></i></span></button>
+            </div>
+        </div>
+    </div>
+
     <div class="loader-overlay" id="loader">
         <div class="loader-box">
-            <figure class="loader-image">
+            <div class="loader-icon">
                 <i class="fa-solid fa-hourglass-half fa-spin-snap-4"></i>
-            </figure>
+            </div>
             <p>We're getting everything ready, give us a moment.</p>
         </div>
     </div>
