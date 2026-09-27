@@ -85,13 +85,14 @@ html {
     cursor: wait;
     text-align: center;
     color: #F2F2F2;
-    -webkit-animation: fade-in 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-    animation: fade-in 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    -webkit-animation: puff-in 0.1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: puff-in 0.1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
-.loader-overlay.fade-out, .sensory-overlay.fade-out {
-    -webkit-animation: fade-out 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-    animation: fade-out 0.2s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+.loader-overlay.fade-out,
+.sensory-overlay.fade-out {
+    -webkit-animation: puff-out 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+    animation: puff-out 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
 }
 
 .loader-overlay .loader-box {
@@ -104,6 +105,8 @@ html {
 .loader-overlay .loader-icon i {
     color: var(--scene-light-color);
     font-size: clamp(none, 25vh, 15vw);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
 }
 
 .loader-overlay .loader-box p {
@@ -201,42 +204,74 @@ html {
     }
 }
 
-@-webkit-keyframes fade-in {
+@-webkit-keyframes puff-in {
     0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
         opacity: 0;
     }
 
     100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
         opacity: 1;
     }
 }
 
-@keyframes fade-in {
+@keyframes puff-in {
     0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
         opacity: 0;
     }
 
     100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
         opacity: 1;
     }
 }
 
-@-webkit-keyframes fade-out {
+@-webkit-keyframes puff-out {
     0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
         opacity: 1;
     }
 
     100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
         opacity: 0;
     }
 }
 
-@keyframes fade-out {
+@keyframes puff-out {
     0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
         opacity: 1;
     }
 
     100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
         opacity: 0;
     }
 }

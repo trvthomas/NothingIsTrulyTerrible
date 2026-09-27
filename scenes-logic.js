@@ -176,20 +176,41 @@ function preloadAssets(scene) {
         ...scene.elements.map(element => `./assets/elements/${element.asset}`)
     ];
 
+    let failedAssets = 0;
+
     return Promise.all(assets.map(src => {
         return new Promise(resolve => {
             const img = new Image();
             img.onload = resolve;
-            img.onerror = resolve;
+            img.onerror = () => {
+                failedAssets++;
+                resolve();
+            };
             img.src = src;
         });
-    }));
+    })).then(() => {
+        if (failedAssets > 0) {
+            let countFailures = Number(localStorage.getItem("failed-assets-count")) || 0;
+            countFailures++;
+            localStorage.setItem("failed-assets-count", countFailures);
+            
+            if(countFailures > 2){
+                document.getElementById("error-continue").style.display = "block";
+            }else{
+                document.getElementById("error-reload").style.display = "block";
+            }
+
+            if(countFailures > 4){
+                localStorage.removeItem("failed-assets-count");
+            }
+        }
+    });
 }
 
 function updateProgress(sceneId) {
     const positionScene = scenes.find(s => s.id === sceneId);
     if (!positionScene || !positionScene.order) return;
-    
+
     const progress = (positionScene.order / total_scenes) * 100;
     document.getElementById('progress-bar').style.width = `${progress}%`;
 }

@@ -4,6 +4,7 @@ const parallaxOptions = {
 }
 
 const visualWarning = document.getElementById('sensory');
+const errorContinue = document.getElementById('error-continue');
 document.addEventListener('DOMContentLoaded', () => {
     const restoreProgress = localStorage.getItem("last-scene");
     const isValidScene = scenes.some(scene => scene.id === restoreProgress);
@@ -36,5 +37,14 @@ function enterExperience() {
 
     visualWarning.addEventListener('animationend', () => {
         visualWarning.style.display = 'none';
+    }, { once: true });
+}
+
+function enterExperienceError() {
+    errorContinue.classList.add('fade-out');
+
+    errorContinue.addEventListener('animationend', () => {
+        errorContinue.classList.remove('fade-out');
+        errorContinue.style.display = 'none';
     }, { once: true });
 }

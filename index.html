@@ -58,12 +58,45 @@
         </div>
     </div>
 
+    <div class="sensory-overlay" id="error-reload" style="display: none">
+        <div class="sensory-box">
+            <figure class="sensory-icon">
+                <i class="fa-solid fa-face-sad-tear"></i>
+            </figure>
+            <h1>Nothing is truly terrible...</h1>
+            <p>...but broken layouts aren't part of the experience. Some images failed to load, please check your
+                connection and reload the page.</p>
+
+            <div class="buttons-container" style="justify-content: center;">
+                <button onclick="window.location.reload()"><span>Reload page</span> <span class="button-icon"><i
+                            class="fa-solid fa-rotate"></i></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="sensory-overlay" id="error-continue" style="display: none">
+        <div class="sensory-box">
+            <figure class="sensory-icon">
+                <i class="fa-solid fa-heart-crack"></i>
+            </figure>
+            <h1>Enter at your own risk!</h1>
+            <p>Some images refused to load. You can still explore the story, though it won't be the full visual
+                experience.</p>
+
+            <div class="buttons-container" style="justify-content: center;">
+                <button onclick="window.location.reload()"><span>Reload again</span> <span class="button-icon"><i
+                            class="fa-solid fa-rotate"></i></span></button>
+                <button onclick="enterExperienceError()"><span>Proceed anyway</span> <span class="button-icon"><i
+                            class="fa-solid fa-arrow-right-to-bracket"></i></span></button>
+            </div>
+        </div>
+    </div>
+
     <div class="loader-overlay" id="loader">
         <div class="loader-box">
             <div class="loader-icon">
-                <i class="fa-solid fa-hourglass-half fa-spin-snap-4"></i>
+                <i class="fa-solid fa-spiral fa-spin"></i>
             </div>
-            <p>We're getting everything ready, give us a moment.</p>
         </div>
     </div>
 
