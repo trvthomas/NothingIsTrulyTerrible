@@ -93,7 +93,7 @@ function buildScene(scene) {
     textLayerTitle.textContent = scene.title;
 
     const textLayerDescription = document.createElement('p');
-    textLayerDescription.textContent = scene.description;
+    textLayerDescription.innerHTML = scene.description;
 
     textLayerContent.appendChild(textLayerTitle);
     textLayerContent.appendChild(textLayerDescription);

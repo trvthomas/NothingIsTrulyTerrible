@@ -20,6 +20,10 @@ html {
     justify-content: center;
 }
 
+b {
+    font-weight: 600;
+}
+
 /* Sensory Warning Overlay */
 .sensory-overlay {
     display: block;

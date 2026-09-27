@@ -32,7 +32,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "Behind the Experience",
-        description: "I'm Thomas, a Robotics Engineering student at UC Riverside with a longtime passion for graphic design and web development. Alongside my studies in hardware and software, I've been building websites and designing visuals for over 10 years.\n In 2025, my mom introduced me to Rafael Santandreu's books. His ideas on renunciation, mental freedom, and finding joy anywhere hit differently once put into practice. But when I tried recommending \"Nada es tan terrible\" to my friends, I hit a wall: there is no English translation.\nSo I made one! Not a text translation, but a visual adaptation; an interactive way to experience Santandreu's core philosophy without needing to know Spanish. This project bridges that gap, while bringing my design, UI, and web development skills together in one place. I hope you enjoy the experience as much as I enjoyed building it. :)",
+        description: "I'm Thomas, a Robotics Engineering student at UC Riverside with a longtime passion for graphic design and web development. Alongside my studies in hardware and software, I've been building websites and designing visuals for over 10 years.<br>In 2025, my mom introduced me to Rafael Santandreu's books. His ideas on renunciation, mental freedom, and finding joy anywhere hit differently once put into practice. But when I tried recommending \"Nada es tan terrible\" to my friends, I hit a wall: there is no English translation.<br>So I made one! Not a text translation, but a visual adaptation; an interactive way to experience Santandreu's core philosophy without needing to know Spanish. This project bridges that gap, while bringing my design, UI, and web development skills together in one place. I hope you enjoy the experience as much as I enjoyed building it. :)",
         hasAudio: false,
         elements: [
             { asset: "scene-AB-profile-pic.webp", top: 60, left: 84, width: 14, depth: 0.1, animation: "blink-subtle", animationDuration: 2 },
@@ -52,7 +52,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "AI usage in this project",
-        description: "In the following pages, I'll explain how I used Generative Artificial Intelligence (AI) to help bring this project to life. I've been coding since I was 12, so my background in web development is pretty solid. The vast majority of the code was written by me, using AI only for a few lines to boost efficiency and organization. One thing I refuse to do is \"vibe coding;\" copying and pasting raw code from automated tools is a nightmare. By writing my own code and vetting every AI-generated line, I spend less time debugging errors and keep the site clean and structures for both, behind the scenes for me, and on the screen for you, the user.",
+        description: "In the following pages, I'll explain how I used Generative Artificial Intelligence (AI) to help bring this project to life.<br>I've been coding since I was 12, so my background in web development is pretty solid. The vast majority of the code was written by me, using AI only for a few lines to boost efficiency and organization.<br>One thing I refuse to do is \"vibe coding;\" copying and pasting raw code from automated tools is a nightmare. By writing my own code and vetting every AI-generated line, I spend less time debugging errors and keep the site clean and structured, both behind the scenes and on screen for the user.",
         hasAudio: false,
         elements: [],
         buttons: [
@@ -68,7 +68,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "Brainstorming and copywriting",
-        description: "Although the original concept and layout were mine, I relied on AI to refine the project, find more efficient ways to build it, and organize the theme of each screen. The core concepts are based on Rafael Santandreu's Spanish book \"Nada es tan terrible,\" drawing specifically from Part 1 of the book (see Credits for more details).",
+        description: "The original concept and layout were entirely my own. I relied on AI tools such as Claude and Gemini to refine the project, explore more efficient ways to build it/code it, and organize the theme of each screen. The core concepts are drawn from Part 1 of Rafael Santandreu's Spanish book, \"Nada es tan terrible\" (see Credits for more details).",
         hasAudio: false,
         elements: [],
         buttons: [
@@ -84,7 +84,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "Images: backgrounds and floating elements",
-        description: "All images used in each scene's background and frame are shot by real photographers, sourced from Pexels.com or Unsplash.com (see Credits for more details). Out of the 100+ floating elements designed for these scenes, only 9 icons are AI-generated (done purely to keep the visual style consistent). All other designs, including the frame's outline, are 100% human-made: either created by myself or sourced from Magnific.com and modified to fit each scene's theme.",
+        description: "All images used in each scene's background and frame are shot by real photographers, sourced from Pexels.com or Unsplash.com (see Credits for more details). Out of the 120+ floating elements designed for all scenes, only 9 icons are AI-generated using CorelDRAW's Vector Master model (done purely to keep the visual style consistent). All other designs, including the frame's outline, are 100% human-made: either created by myself or sourced from Magnific.com and modified to fit each scene's theme.",
         hasAudio: false,
         elements: [],
         buttons: [
@@ -99,7 +99,23 @@ const scenes = [
         textLayout: "top",
         gradientWH: 0,
         title: "Credits",
-        description: "•| Concepts and philosophy: Based on Part 1 of \"Nada es tan terrible\" by Rafael Santandreu. \n•| Background and texture images: Photography sourced via Unsplash.com and Pexels.com. \n•| Custom artwork and adaptations: Designed, vectorized, and modified by Thomas Rodriguez (@trvthomas) \n•| Vectors and assets: Sourced from Magnific.com, designed by: rawpixel.com, vectorpouch, macrovector, brgfx, Freepik, starline, juicy_fish, pch.vector, vector4stock, djvstock, kjpargeter, muhammad.abdullah, vectorjuice, callmetak, alicia_mb.\n•| Development and libraries: Parallax motion built using Parallax.js. Custom animations handcrafted by Thomas Rodriguez (@trvthomas), with select effects generated and adapted from Animista.net by Ana Travas.",
+        description: "<b>Concepts and philosophy:</b> Based on Part 1 of \"Nada es tan terrible\" by Rafael Santandreu.<br><br><b>Backgrounds and texture images:</b> Photography sourced via Unsplash.com and Pexels.com.<br><br><b>Custom artwork and adaptations:</b> Designed, vectorized, and modified by Thomas Rodriguez (@trvthomas)<br><br><b>Typography:</b> Fredoka, Solway, Playwrite Cuba Guides, and Geist Pixel via Google Fonts. Sniglet by Haley Fiege, via The League of Moveable Type.",
+        hasAudio: false,
+        elements: [],
+        buttons: [
+            { text: "Home", icon: "house", toScene: "1" },
+            { text: "Next", icon: "chevron-right", toScene: "CR2" }
+        ]
+    },
+    {
+        id: "CR2",
+        darkColor: "#005580",
+        lightColor: "#CCEEFF",
+        immersiveColor: "#085D91",
+        textLayout: "top",
+        gradientWH: 0,
+        title: "Credits, continued",
+        description: "<b>Vectors and assets:</b> Sourced from Magnific.com, designed by: rawpixel.com, vectorpouch, macrovector, brgfx, Freepik, starline, juicy_fish, pch.vector, vector4stock, djvstock, kjpargeter, muhammad.abdullah, vectorjuice, callmetak, alicia_mb.<br><br><b>Development and libraries:</b> Parallax 3D motion built using Parallax.js by Matthew Wagerfield. Custom animations handcrafted by Thomas Rodriguez (@trvthomas), with select effects generated and adapted from Animista.net by Ana Travas.",
         hasAudio: false,
         elements: [],
         buttons: [
@@ -115,7 +131,7 @@ const scenes = [
         gradientWH: 55,
         textLayout: "center",
         title: "Inventions",
-        description: "Coming straight of our own heads. Most suffering is just made up: a tangle of mental knots that look terrifying until we realize we tied them ourselves.",
+        description: "Coming straight of our own heads. Most suffering is just made up: a tangle of mental knots that look terrifying until we realize <b>we tied them ourselves</b>.",
         hasAudio: false,
         elements: [
             // Items
@@ -147,7 +163,7 @@ const scenes = [
         textLayout: "left",
         gradientWH: 0,
         title: "Is the cage holding the monkey?",
-        description: "Or is the monkey holding the cage? Hunters leave bananas inside a narrow trap. The monkey slips its hand in to grab the fruit, but with a clenched fist, it can't pull it back out. Because it refuses to let go of the bait, it traps itself!",
+        description: "Or is the monkey holding the cage?<br>Hunters leave bananas inside a narrow trap. The monkey slips its hand in to grab the fruit, but with a clenched fist, it can't pull it back out. Because it refuses to let go of the bait, it traps itself!",
         hasAudio: false,
         elements: [
             { asset: "scene-3ab-banana.webp", top: 37, left: 51, width: 11, depth: 0.1, animation: "shake-m", animationDuration: 1.4 },
@@ -169,7 +185,7 @@ const scenes = [
         textLayout: "left",
         gradientWH: 48,
         title: "The bait isn't worth the bars",
-        description: "Every time we refuse to let go of something, like a broken relationship, constant perfection, or the need of approval, we trap ourselves in a mental cage that produces nothing but fear and anxiety.",
+        description: "Every time we refuse to let go of something, like a broken relationship, constant perfection, or the need of approval, we <b>trap ourselves</b> in a mental cage that produces nothing but fear and anxiety.",
         hasAudio: false,
         elements: [
             { asset: "scene-3ab-banana.webp", top: 37, left: 51, width: 11, depth: 0.1, animation: "shake-m", animationDuration: 1.6 },
@@ -191,7 +207,7 @@ const scenes = [
         textLayout: "right",
         gradientWH: 0,
         title: "Searching in the wrong place",
-        description: "Happiness isn't missing; you're just looking for it at the wrong place. Letting go isn't a loss, it's the realization that you never needed those things to be happy in the first place.",
+        description: "<b>Happiness isn't missing</b>; you're just looking for it at the wrong place. Letting go isn't a loss, it's the realization that you never needed those things to be happy in the first place.",
         hasAudio: false,
         elements: [
             { asset: "scene-4a-glow.webp", top: 16, left: 30, width: 40, depth: 0.06, animation: "heart-beat", animationDuration: 6 },
@@ -226,7 +242,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 45,
         title: "Make room for something new",
-        description: "In every situation, a fresh opportunity is waiting to be seen. Renunciation clears the canvas, and creation fills it back with new challenges and meanings.",
+        description: "In every situation, a fresh opportunity is waiting to be seen. <b>Renunciation</b> clears the canvas, and <b>creation</b> fills it back with new challenges and meanings.",
         hasAudio: false,
         elements: [
             { asset: "scene-4c-frame-erasing.webp", top: 40, left: 12, width: 25, depth: 0.1, animation: "shake-m", animationDuration: 15 },
@@ -282,7 +298,7 @@ const scenes = [
         textLayout: "top",
         gradientWH: 48,
         title: "Ownership is overrated",
-        description: "Having more stuff doesn't make life richer. True wealth is the ability to enjoy what's already around us.",
+        description: "Having more stuff doesn't make life richer. <b>True wealth</b> is the ability to enjoy what's already around us.",
         hasAudio: false,
         elements: [
             { asset: "scene-5b-spiral.webp", top: 38, left: 10, width: 34, depth: 0.1 },
@@ -309,7 +325,7 @@ const scenes = [
         textLayout: "right",
         gradientWH: 52,
         title: "How heavy is a glass of water?",
-        description: "Hold it for a minute, no problem. Hold it for an hour, your arm starts to ache. Hold it all day, and you are paralyzed! The weight never changes, only how long you grip it.",
+        description: "Hold it for a minute, no problem. Hold it for an hour, your arm starts to ache. Hold it all day, and you are paralyzed!<br>The weight never changes, only how long you grip it.",
         hasAudio: false,
         elements: [
             { asset: "scene-6a-droplet1.webp", top: 18, left: 12, width: 10, depth: 0.6, animation: "jello-1", animationDuration: 2 },
@@ -332,7 +348,7 @@ const scenes = [
         textLayout: "right",
         gradientWH: 50,
         title: "The weight is self-inflicted",
-        description: "Constantly obsessing about that exam, the meeting, or the \"what ifs\" turns into paralyzing anxiety when we refuse to set those thoughts down. We are the ones keeping our arms raised, and we are the only ones who can set the glass down.",
+        description: "Constantly obsessing about that exam, the meeting, or the \"what ifs\" turns into paralyzing anxiety when we refuse to set those thoughts down.<br>We are the ones keeping our arms raised, and we are the only ones who can set the glass down.",
         hasAudio: false,
         elements: [
             { asset: "scene-6b-droplet3.webp", top: 28, left: 4, width: 30, depth: 0.2, animation: "flicker-subtle", animationDuration: 7 },
@@ -355,7 +371,7 @@ const scenes = [
         textLayout: "right",
         gradientWH: 55,
         title: "Suddenly, the ache stops",
-        description: "The moment your hand opens and you detach from the outcome of those worries, you can feel the relief. Stepping back isn't failure; it's what frees you to keep moving forward.",
+        description: "The moment your hand opens and you detach from the outcome of those worries, you can feel the relief.<br>Stepping back isn't failure; it's what frees you to keep moving forward.",
         hasAudio: false,
         elements: [
             { asset: "scene-6c-droplet1.webp", top: 68, left: 10, width: 18, depth: 0.05, animation: "blink-subtle", animationDuration: 2 },
@@ -378,7 +394,7 @@ const scenes = [
         textLayout: "center",
         gradientWH: 45,
         title: "Why are we doing all this?",
-        description: "Not to complete a set list, but to enjoy each step along the way. Every activity you do, do it with affection and joy, never out of obligation or fear.",
+        description: "Not to complete a set list, but to <b>enjoy each step</b> along the way. Every activity you do, do it with affection and joy, never out of obligation or fear.",
         hasAudio: false,
         elements: [
             // Tiny
@@ -415,7 +431,7 @@ const scenes = [
         textLayout: "left",
         gradientWH: 0,
         title: "Is bad traffic really a warzone?",
-        description: "Bad traffic, long lines, or a spilled coffee aren't real disasters. Believing that life should always go smoothly is what makes small disruptions feel impossible. Even a delay is just extra time you didn't know you had!",
+        description: "Bad traffic, long lines, or a spilled coffee <b>aren't real disasters</b>.<br>Believing that life should always go smoothly is what makes small disruptions feel impossible. Even a delay is just extra time you didn't know you had!",
         hasAudio: false,
         elements: [
             { asset: "scene-7b-bottom-bubble.webp", top: 0, left: 58, width: 40, depth: 0.3, animation: "flicker-subtle", animationDuration: 4 },
@@ -442,7 +458,7 @@ const scenes = [
         textLayout: "bottom",
         gradientWH: 51,
         title: "Life's treasure chest",
-        description: "Life fills this chest with every kind of moment, good or messy. None of them are catastrophes, and your only job is to reach in and find what can be enjoyed.",
+        description: "Life fills this chest with every kind of moment, good or messy. None of them are catastrophes, and your only job is to reach in and <b>find what can be enjoyed.</b>",
         hasAudio: false,
         elements: [
             { asset: "scene-7c-chest-bg.webp", top: 35.9, left: 37.8, width: 33.2, depth: 0.3, animation: "move-y", animationDuration: 7 },
@@ -484,7 +500,7 @@ const scenes = [
         textLayout: "left",
         gradientWH: 54,
         title: "What if nothing is truly terrible?",
-        description: "Actually... nothing is! When you drop the heavy grip of expectations, you see that ordinary moments were never your enemy. Renunciation empties your hands so you can finally enjoy what's in front of you; now you get to decide what you actually care to hold.",
+        description: "<b>Actually... nothing is!</b><br>When you drop the heavy grip of expectations, you see that ordinary moments were never your enemy. Renunciation empties your hands so you can finally enjoy what's in front of you; now you get to decide what you actually care to hold.",
         hasAudio: false,
         elements: [
             { asset: "scene-8-b3.webp", top: 35, left: 25, width: 78, depth: 0.2, animation: "move-x", animationDuration: 3 },
