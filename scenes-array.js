@@ -440,9 +440,9 @@ const scenes = [
             { asset: "scene-7b-jet2.webp", top: 32, left: 73, width: 9, depth: 0.28 },
             { asset: "scene-7b-jet3.webp", top: 13, left: 80, width: 7, depth: 0.2, animation: "move-diagonal-2", animationDuration: 2.8, animationReverse: true },
             { asset: "scene-7b-bomb1.webp", top: 34, left: 84, width: 7, depth: 0.15, animation: "move-diagonal-2", animationDuration: 1.2 },
-            { asset: "scene-7b-bomb1-details.webp", top: 29, left: 89, width: 4, depth: 0.2, animation: "move-diagonal-2", animationDuration: 1.2 },
+            { asset: "scene-7b-bomb1-details.webp", top: 29, left: 89, width: 4, depth: 0.2, animation: "move-diagonal-2", animationDuration: 1.21 },
             { asset: "scene-7b-bomb2.webp", top: 44, left: 66, width: 5, depth: 0.18, animation: "move-diagonal-1", animationDuration: 1.5 },
-            { asset: "scene-7b-bomb2-details.webp", top: 40, left: 64.2, width: 3, depth: 0.2, animation: "move-diagonal-1", animationDuration: 1.5 },
+            { asset: "scene-7b-bomb2-details.webp", top: 40, left: 64.2, width: 3, depth: 0.2, animation: "move-diagonal-1", animationDuration: 1.51 },
             { asset: "scene-7b-top-bubble.webp", top: -5, left: 55, width: 46, depth: 0.36 },
         ],
         buttons: [
