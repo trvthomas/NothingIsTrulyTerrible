@@ -262,7 +262,7 @@ const scenes = [
         lightColor: "#FFE6FF",
         immersiveColor: "#10467A",
         textLayout: "center",
-        gradientWH: 56,
+        gradientWH: 62,
         title: "Life is a garden!",
         description: "It's overflowing with abundance. You don't need to own the garden to enjoy its fruit, you just have to notice what's already growing.",
         hasAudio: false,
