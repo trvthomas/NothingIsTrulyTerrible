@@ -31,11 +31,11 @@ const scenes = [
         immersiveColor: "#085D91",
         textLayout: "top",
         gradientWH: 0,
-        title: "Behind the Experience",
-        description: "I'm Thomas, a Robotics Engineering student at UC Riverside with a longtime passion for graphic design and web development. Alongside my studies in hardware and software, I've been building websites and designing visuals for over 10 years.<br>In 2025, my mom introduced me to Rafael Santandreu's books. His ideas on renunciation, mental freedom, and finding joy anywhere hit differently once put into practice. But when I tried recommending \"Nada es tan terrible\" to my friends, I hit a wall: there is no English translation.<br>So I made one! Not a text translation, but a visual adaptation; an interactive way to experience Santandreu's core philosophy without needing to know Spanish. This project bridges that gap, while bringing my design, UI, and web development skills together in one place. I hope you enjoy the experience as much as I enjoyed building it. :)",
+        title: "About Me",
+        description: "I'm Thomas, a Robotics Engineering student at UC Riverside with a 10-year background in graphic design and web development.<br>In 2025, my mom introduced me to Rafael Santandreu's books. His ideas on renunciation and mental freedom hit differently once put into practice. But when I tried recommending his book \"Nada es tan terrible,\" I hit a wall: there is no English translation.<br>So I made one! This project brings Santandreu's core philosophy to life visually, and lets me put my design, UI, and web development skills together in one place. I hope you enjoy it as much as I enjoyed building it. :)",
         hasAudio: false,
         elements: [
-            { asset: "scene-AB-profile-pic.webp", top: 60, left: 84, width: 14, depth: 0.1, animation: "blink-subtle", animationDuration: 2 },
+            { asset: "scene-AB-profile-pic.webp", top: 57, left: 80, width: 16, depth: 0.1, animation: "blink-subtle", animationDuration: 2 },
         ],
         buttons: [
             { text: "Home", icon: "house", toScene: "1" },
